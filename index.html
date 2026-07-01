@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الشركة الألمانية لمكافحة الحشرات | German Pest Control</title>
+<meta name="description" content="الشركة الألمانية لمكافحة الحشرات - الشركة الوحيدة المرخصة والموثقة من وزارة الصحة المصرية. حلول احترافية لمكافحة الحشرات والقوارض للمنازل والفلل والكمبوندات بضمان يصل إلى 3 سنوات.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#2e7d32; --green-dark:#1b4d20; --green-light:#66bb6a;
+  --gold:#c9a227; --dark:#0f1e12; --bg:#f7faf7; --white:#ffffff;
+  --shadow:0 10px 30px rgba(0,0,0,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:#213021;line-height:1.8;overflow-x:hidden;}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;}
+.container{max-width:1200px;margin:0 auto;padding:0 20px;}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#fff;padding:14px 30px;border-radius:50px;font-weight:700;transition:.3s;border:none;cursor:pointer;font-size:16px;}
+.btn:hover{background:var(--green-dark);transform:translateY(-3px);box-shadow:var(--shadow);}
+.btn-gold{background:var(--gold);}
+.btn-gold:hover{background:#a8871c;}
+.btn-wa{background:#25d366;}
+.btn-wa:hover{background:#1da851;}
+
+/* Header */
+header{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);z-index:1000;box-shadow:0 2px 15px rgba(0,0,0,.08);}
+nav{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900;font-size:20px;color:var(--green-dark);}
+.logo .mark{width:48px;height:48px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:var(--shadow);}
+.nav-links{display:flex;gap:28px;align-items:center;}
+.nav-links a{font-weight:600;transition:.2s;}
+.nav-links a:hover{color:var(--green);}
+.menu-btn{display:none;font-size:28px;background:none;border:none;cursor:pointer;color:var(--green-dark);}
+
+/* Hero */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;background:linear-gradient(rgba(15,30,18,.82),rgba(15,30,18,.78)),url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80') center/cover;color:#fff;padding-top:80px;}
+.hero-content{max-width:720px;}
+.badge{display:inline-block;background:rgba(201,162,39,.2);color:var(--gold);border:1px solid var(--gold);padding:8px 18px;border-radius:50px;font-weight:700;font-size:14px;margin-bottom:20px;}
+.hero h1{font-size:clamp(32px,5vw,56px);font-weight:900;line-height:1.3;margin-bottom:18px;}
+.hero h1 span{color:var(--green-light);}
+.hero p{font-size:clamp(16px,2vw,20px);margin-bottom:30px;opacity:.95;}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap;}
+
+/* Features strip */
+.features{background:var(--green-dark);color:#fff;}
+.features .container{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:40px 20px;}
+.feature{text-align:center;}
+.feature .ic{font-size:34px;margin-bottom:8px;}
+.feature h4{font-size:16px;font-weight:700;}
+
+/* Section */
+section{padding:80px 0;}
+.sec-head{text-align:center;max-width:700px;margin:0 auto 50px;}
+.sec-head .kick{color:var(--gold);font-weight:800;letter-spacing:1px;text-transform:uppercase;font-size:14px;}
+.sec-head h2{font-size:clamp(26px,4vw,40px);font-weight:900;color:var(--green-dark);margin:8px 0 14px;}
+.sec-head p{color:#5a6a5a;font-size:17px;}
+
+/* Services */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;}
+.card{background:#fff;border-radius:18px;padding:34px 28px;box-shadow:var(--shadow);transition:.3s;border-top:4px solid var(--green);}
+.card:hover{transform:translateY(-8px);}
+.card .ic{width:70px;height:70px;background:linear-gradient(135deg,var(--green),var(--green-light));border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:34px;margin-bottom:18px;color:#fff;}
+.card h3{font-size:21px;font-weight:800;color:var(--green-dark);margin-bottom:10px;}
+.card p{color:#5a6a5a;}
+
+/* About */
+.about{background:#fff;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
+.about-img{border-radius:20px;overflow:hidden;box-shadow:var(--shadow);height:100%;min-height:340px;background:linear-gradient(rgba(46,125,50,.15),rgba(46,125,50,.15)),url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1000&q=80') center/cover;}
+.about-text h2{font-size:clamp(26px,4vw,38px);color:var(--green-dark);font-weight:900;margin-bottom:18px;}
+.about-text p{color:#4a5a4a;margin-bottom:16px;font-size:17px;}
+.check-list{list-style:none;display:grid;gap:12px;margin-top:20px;}
+.check-list li{display:flex;align-items:center;gap:12px;font-weight:600;}
+.check-list li::before{content:"✔";color:#fff;background:var(--green);width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;}
+
+/* Stats */
+.stats{background:linear-gradient(135deg,var(--green-dark),var(--green));color:#fff;text-align:center;}
+.stats .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.stat h3{font-size:44px;font-weight:900;color:var(--gold);}
+.stat p{font-size:16px;font-weight:600;}
+
+/* Areas */
+.areas .chips{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:10px;}
+.chip{background:#fff;border:2px solid var(--green-light);color:var(--green-dark);padding:12px 26px;border-radius:50px;font-weight:700;box-shadow:0 4px 12px rgba(0,0,0,.06);}
+
+/* Contact */
+.contact{background:#fff;}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+.info-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:24px;}
+.info-item .ic{width:52px;height:52px;background:var(--green);color:#fff;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+.info-item h4{font-weight:800;color:var(--green-dark);margin-bottom:4px;}
+.info-item p,.info-item a{color:#5a6a5a;font-weight:600;}
+.branches{background:var(--bg);border-radius:18px;padding:30px;}
+.branch{margin-bottom:22px;padding-bottom:22px;border-bottom:1px dashed #cdd8cd;}
+.branch:last-child{border:none;margin:0;padding:0;}
+.branch h4{color:var(--green-dark);font-weight:800;display:flex;align-items:center;gap:8px;}
+.branch p{color:#5a6a5a;}
+
+/* CTA */
+.cta-band{background:linear-gradient(135deg,var(--gold),#e0b530);color:var(--dark);text-align:center;}
+.cta-band h2{font-size:clamp(24px,4vw,36px);font-weight:900;margin-bottom:16px;}
+.cta-band .btn{background:var(--green-dark);}
+.cta-band .btn:hover{background:#123515;}
+
+/* Footer */
+footer{background:var(--dark);color:#cdd8cd;padding:50px 0 20px;text-align:center;}
+.social{display:flex;gap:18px;justify-content:center;margin:20px 0;}
+.social a{width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:20px;transition:.3s;}
+.social a:hover{background:var(--green);transform:translateY(-4px);}
+footer .fnav{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-bottom:18px;}
+footer .copy{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;font-size:14px;opacity:.7;}
+
+/* Floating WhatsApp */
+.float-wa{position:fixed;bottom:26px;left:26px;width:62px;height:62px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;color:#fff;box-shadow:0 8px 24px rgba(37,211,102,.5);z-index:1500;animation:pulse 2s infinite;}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+@media(max-width:860px){
+  .nav-links{position:fixed;top:72px;right:0;left:0;background:#fff;flex-direction:column;padding:20px;gap:16px;box-shadow:var(--shadow);transform:translateY(-150%);transition:.3s;}
+  .nav-links.open{transform:translateY(0);}
+  .menu-btn{display:block;}
+  .features .container{grid-template-columns:repeat(2,1fr);}
+  .about-grid,.contact-grid{grid-template-columns:1fr;}
+  .stats .grid4{grid-template-columns:repeat(2,1fr);}
+}
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <a href="#" class="logo"><span class="mark">🐜</span> الشركة الألمانية <br>لمكافحة الحشرات</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">الرئيسية</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#about">من نحن</a>
+      <a href="#areas">مناطق الخدمة</a>
+      <a href="#contact">تواصل معنا</a>
+      <a href="tel:+201015335554" class="btn">📞 اتصل الآن</a>
+    </div>
+    <button class="menu-btn" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <span class="badge">🏅 الشركة الوحيدة المرخصة والموثقة من وزارة الصحة المصرية</span>
+    <h1>حماية <span>احترافية</span> لمنزلك من الحشرات والقوارض</h1>
+    <p>هنخلصك من الحشرات والقوارض بسهولة وأمان باستخدام مواد مصرّح بها، مع ضمان ومتابعة دورية بدون مغادرة المنزل. جودة ألمانية وفريق محترف وحماية تدوم.</p>
+    <div class="hero-btns">
+      <a href="tel:+201015335554" class="btn btn-gold">📞 01015335554</a>
+      <a href="https://wa.me/201015335554" class="btn btn-wa">💬 واتساب</a>
+      <a href="#services" class="btn">تعرف على خدماتنا</a>
+    </div>
+  </div>
+</section>
+
+<div class="features">
+  <div class="container">
+    <div class="feature"><div class="ic">🛡️</div><h4>أمان على الأسرة والحيوانات</h4></div>
+    <div class="feature"><div class="ic">🌿</div><h4>مواد معتمدة وصديقة للبيئة</h4></div>
+    <div class="feature"><div class="ic">🎯</div><h4>إبادة شاملة وفعّالة</h4></div>
+    <div class="feature"><div class="ic">🕐</div><h4>خدمة عملاء على مدار الساعة</h4></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="container">
+    <div class="sec-head">
+      <span class="kick">German Quality</span>
+      <h2>خدماتنا في مكافحة الآفات</h2>
+      <p>نقدم حلول Pest Control Premium للفلل والمنازل الراقية والكمبوندات بأحدث التقنيات الألمانية.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="ic">🪳</div><h3>مكافحة الصراصير</h3><p>القضاء التام على الصراصير بأنواعها باستخدام مواد آمنة وفعّالة مع ضمان عدم عودتها.</p></div>
+      <div class="card"><div class="ic">🐜</div><h3>مكافحة النمل الأبيض</h3><p>حماية منزلك من أخطر الآفات التي تسبب خسائر فعلية قبل اكتشافها، بأنظمة حقن متطورة.</p></div>
+      <div class="card"><div class="ic">🐀</div><h3>مكافحة القوارض والفئران</h3><p>حلول متكاملة للتخلص من الفئران والقوارض وإغلاق منافذ دخولها نهائياً.</p></div>
+      <div class="card"><div class="ic">🦟</div><h3>مكافحة الناموس والذباب</h3><p>رش وتعقيم يمنع تكاثر الناموس والذباب ويحمي عائلتك من الأمراض.</p></div>
+      <div class="card"><div class="ic">🕷️</div><h3>مكافحة بق الفراش والعناكب</h3><p>معالجة متخصصة لبق الفراش تضمن راحتك ونومك بأمان تام.</p></div>
+      <div class="card"><div class="ic">🏢</div><h3>عقود سنوية للشركات</h3><p>برامج متابعة دورية للشركات والمطاعم والكمبوندات بضمان يصل إلى 3 سنوات.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-img"></div>
+    <div class="about-text">
+      <span class="kick" style="color:var(--gold);font-weight:800;">من نحن</span>
+      <h2>الشركة الألمانية لمكافحة الحشرات</h2>
+      <p>المنزل الراقي لا يحتاج فقط إلى النظافة الظاهرة، بل إلى حماية احترافية تحافظ على جودة الحياة داخله. نحن الشركة الوحيدة المرخصة والموثقة من وزارة الصحة المصرية.</p>
+      <p>نقدم خدماتنا بسرية واحترافية كاملة، باستخدام مواد مصرّح بها وآمنة تماماً على الأسرة والأطفال والحيوانات الأليفة.</p>
+      <ul class="check-list">
+        <li>سرية واحترافية كاملة في العمل</li>
+        <li>ضمان يصل إلى 3 سنوات</li>
+        <li>فريق محترف مدرّب على أعلى مستوى</li>
+        <li>متابعة دورية بعد التنفيذ</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container">
+    <div class="grid4">
+      <div class="stat"><h3>5.6K+</h3><p>عميل يثق بنا</p></div>
+      <div class="stat"><h3>3</h3><p>سنوات ضمان</p></div>
+      <div class="stat"><h3>24/7</h3><p>خدمة عملاء</p></div>
+      <div class="stat"><h3>100%</h3><p>مواد آمنة مرخصة</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="areas" id="areas">
+  <div class="container">
+    <div class="sec-head">
+      <span class="kick">Premium Protection</span>
+      <h2>مناطق الخدمة</h2>
+      <p>نخدم أرقى المناطق والكمبوندات في القاهرة والإسكندرية والساحل الشمالي.</p>
+    </div>
+    <div class="chips">
+      <span class="chip">📍 الشيخ زايد</span>
+      <span class="chip">📍 التجمع</span>
+      <span class="chip">📍 الرحاب</span>
+      <span class="chip">📍 مدينتي</span>
+      <span class="chip">📍 الساحل الشمالي</span>
+      <span class="chip">📍 مدينة نصر</span>
+      <span class="chip">📍 الإسكندرية</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="sec-head">
+      <span class="kick">تواصل معنا</span>
+      <h2>احجز خدمتك الآن</h2>
+      <p>فريقنا جاهز لخدمتك على مدار الساعة. تواصل معنا عبر أي وسيلة تناسبك.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="info-item"><div class="ic">📞</div><div><h4>اتصل بنا</h4><a href="tel:+201015335554">01015335554</a><br><a href="tel:+201015335554">+20 10 15335554</a></div></div>
+        <div class="info-item"><div class="ic">✉️</div><div><h4>البريد الإلكتروني</h4><a href="mailto:germancontrol702@gmail.com">germancontrol702@gmail.com</a></div></div>
+        <div class="info-item"><div class="ic">💬</div><div><h4>واتساب</h4><a href="https://wa.me/201015335554">راسلنا مباشرة على واتساب</a></div></div>
+        <div class="info-item"><div class="ic">🕐</div><div><h4>مواعيد العمل</h4><p>مفتوح دائماً - 24 ساعة</p></div></div>
+      </div>
+      <div class="branches">
+        <div class="branch">
+          <h4>🏢 فرع القاهرة</h4>
+          <p>مدينة نصر - ٥٢ شارع الطيران أمام مستشفى مدينة نصر التخصصي</p>
+        </div>
+        <div class="branch">
+          <h4>🏢 فرع الإسكندرية</h4>
+          <p>كامب شيزار على الترام - فوق بنك القاهرة</p>
+        </div>
+        <div style="margin-top:20px;text-align:center;">
+          <a href="tel:+201015335554" class="btn" style="width:100%;justify-content:center;">📞 اتصل الآن للحجز</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>حماية تدوم.. راحة تدوم أكثر</h2>
+    <p style="margin-bottom:24px;font-size:18px;font-weight:600;">اطلب زيارة معاينة مجانية اليوم واحصل على ضمان يصل إلى 3 سنوات</p>
+    <a href="https://wa.me/201015335554" class="btn">💬 تواصل عبر واتساب</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <a href="#" class="logo" style="justify-content:center;color:#fff;">🐜 الشركة الألمانية لمكافحة الحشرات</a>
+    <p style="margin-top:14px;">German Pest Control | Premium pest management solutions</p>
+    <div class="social">
+      <a href="https://www.instagram.com/" title="Instagram">📷</a>
+      <a href="https://www.tiktok.com/@user4156545939671" title="TikTok">🎵</a>
+      <a href="https://wa.me/201015335554" title="WhatsApp">💬</a>
+      <a href="mailto:germancontrol702@gmail.com" title="Email">✉️</a>
+    </div>
+    <div class="fnav">
+      <a href="#home">الرئيسية</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#about">من نحن</a>
+      <a href="#contact">تواصل معنا</a>
+    </div>
+    <div class="copy">© 2026 الشركة الألمانية لمكافحة الحشرات. جميع الحقوق محفوظة.</div>
+  </div>
+</footer>
+
+<a href="https://wa.me/201015335554" class="float-wa" title="تواصل معنا على واتساب">💬</a>
+
+<script>
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));
+</script>
+</body>
+</html>
