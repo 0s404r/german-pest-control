@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>الشركة الألمانية لمكافحة الحشرات | German Pest Control</title>
 <meta name="description" content="الشركة الألمانية لمكافحة الحشرات - الشركة الوحيدة المرخصة والموثقة من وزارة الصحة المصرية. حلول احترافية لمكافحة الحشرات والقوارض للمنازل والفلل والكمبوندات بضمان يصل إلى 3 سنوات.">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -28,17 +30,18 @@ img{max-width:100%;display:block;}
 
 /* Header */
 header{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);z-index:1000;box-shadow:0 2px 15px rgba(0,0,0,.08);}
-nav{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1200px;margin:0 auto;}
-.logo{display:flex;align-items:center;gap:12px;font-weight:900;font-size:20px;color:var(--green-dark);}
-.logo .mark{width:48px;height:48px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:var(--shadow);}
+nav{display:flex;align-items:center;justify-content:space-between;padding:10px 20px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900;font-size:18px;color:var(--green-dark);line-height:1.3;}
+.logo img{width:58px;height:58px;object-fit:contain;}
 .nav-links{display:flex;gap:28px;align-items:center;}
 .nav-links a{font-weight:600;transition:.2s;}
 .nav-links a:hover{color:var(--green);}
 .menu-btn{display:none;font-size:28px;background:none;border:none;cursor:pointer;color:var(--green-dark);}
 
 /* Hero */
-.hero{min-height:100vh;display:flex;align-items:center;position:relative;background:linear-gradient(rgba(15,30,18,.82),rgba(15,30,18,.78)),url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80') center/cover;color:#fff;padding-top:80px;}
-.hero-content{max-width:720px;}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;background:linear-gradient(rgba(15,30,18,.82),rgba(15,30,18,.78)),url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80') center/cover;color:#fff;padding-top:90px;}
+.hero-content{max-width:760px;}
+.hero-logo{width:150px;height:150px;object-fit:contain;background:rgba(255,255,255,.95);border-radius:50%;padding:14px;margin-bottom:22px;box-shadow:0 10px 40px rgba(0,0,0,.35);}
 .badge{display:inline-block;background:rgba(201,162,39,.2);color:var(--gold);border:1px solid var(--gold);padding:8px 18px;border-radius:50px;font-weight:700;font-size:14px;margin-bottom:20px;}
 .hero h1{font-size:clamp(32px,5vw,56px);font-weight:900;line-height:1.3;margin-bottom:18px;}
 .hero h1 span{color:var(--green-light);}
@@ -70,7 +73,8 @@ section{padding:80px 0;}
 /* About */
 .about{background:#fff;}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
-.about-img{border-radius:20px;overflow:hidden;box-shadow:var(--shadow);height:100%;min-height:340px;background:linear-gradient(rgba(46,125,50,.15),rgba(46,125,50,.15)),url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1000&q=80') center/cover;}
+.about-img{border-radius:20px;overflow:hidden;box-shadow:var(--shadow);height:100%;min-height:340px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#eef6ee,#ffffff);padding:30px;}
+.about-img img{max-width:80%;height:auto;object-fit:contain;}
 .about-text h2{font-size:clamp(26px,4vw,38px);color:var(--green-dark);font-weight:900;margin-bottom:18px;}
 .about-text p{color:#4a5a4a;margin-bottom:16px;font-size:17px;}
 .check-list{list-style:none;display:grid;gap:12px;margin-top:20px;}
@@ -108,6 +112,7 @@ section{padding:80px 0;}
 
 /* Footer */
 footer{background:var(--dark);color:#cdd8cd;padding:50px 0 20px;text-align:center;}
+.footer-logo{width:110px;height:110px;object-fit:contain;background:#fff;border-radius:50%;padding:10px;margin:0 auto 14px;}
 .social{display:flex;gap:18px;justify-content:center;margin:20px 0;}
 .social a{width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:20px;transition:.3s;}
 .social a:hover{background:var(--green);transform:translateY(-4px);}
@@ -119,9 +124,11 @@ footer .copy{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;font-siz
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
 
 @media(max-width:860px){
-  .nav-links{position:fixed;top:72px;right:0;left:0;background:#fff;flex-direction:column;padding:20px;gap:16px;box-shadow:var(--shadow);transform:translateY(-150%);transition:.3s;}
+  .nav-links{position:fixed;top:80px;right:0;left:0;background:#fff;flex-direction:column;padding:20px;gap:16px;box-shadow:var(--shadow);transform:translateY(-160%);transition:.3s;}
   .nav-links.open{transform:translateY(0);}
   .menu-btn{display:block;}
+  .logo{font-size:15px;}
+  .logo img{width:48px;height:48px;}
   .features .container{grid-template-columns:repeat(2,1fr);}
   .about-grid,.contact-grid{grid-template-columns:1fr;}
   .stats .grid4{grid-template-columns:repeat(2,1fr);}
@@ -131,7 +138,7 @@ footer .copy{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;font-siz
 <body>
 <header>
   <nav>
-    <a href="#" class="logo"><span class="mark">🐜</span> الشركة الألمانية <br>لمكافحة الحشرات</a>
+    <a href="#" class="logo"><img src="logo.png" alt="شعار الشركة الألمانية لمكافحة الحشرات"> <span>الشركة الألمانية<br>لمكافحة الحشرات</span></a>
     <div class="nav-links" id="navLinks">
       <a href="#home">الرئيسية</a>
       <a href="#services">خدماتنا</a>
@@ -146,6 +153,7 @@ footer .copy{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;font-siz
 
 <section class="hero" id="home">
   <div class="container hero-content">
+    <img src="logo.png" alt="شعار الشركة الألمانية لمكافحة الحشرات" class="hero-logo">
     <span class="badge">🏅 الشركة الوحيدة المرخصة والموثقة من وزارة الصحة المصرية</span>
     <h1>حماية <span>احترافية</span> لمنزلك من الحشرات والقوارض</h1>
     <p>هنخلصك من الحشرات والقوارض بسهولة وأمان باستخدام مواد مصرّح بها، مع ضمان ومتابعة دورية بدون مغادرة المنزل. جودة ألمانية وفريق محترف وحماية تدوم.</p>
@@ -186,7 +194,7 @@ footer .copy{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;font-siz
 
 <section class="about" id="about">
   <div class="container about-grid">
-    <div class="about-img"></div>
+    <div class="about-img"><img src="logo.png" alt="شعار الشركة الألمانية لمكافحة الحشرات"></div>
     <div class="about-text">
       <span class="kick" style="color:var(--gold);font-weight:800;">من نحن</span>
       <h2>الشركة الألمانية لمكافحة الحشرات</h2>
@@ -273,8 +281,9 @@ footer .copy{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;font-siz
 
 <footer>
   <div class="container">
-    <a href="#" class="logo" style="justify-content:center;color:#fff;">🐜 الشركة الألمانية لمكافحة الحشرات</a>
-    <p style="margin-top:14px;">German Pest Control | Premium pest management solutions</p>
+    <img src="logo.png" alt="شعار الشركة الألمانية لمكافحة الحشرات" class="footer-logo">
+    <p style="margin-top:6px;font-weight:800;color:#fff;font-size:18px;">الشركة الألمانية لمكافحة الحشرات</p>
+    <p style="margin-top:6px;">German Pest Control | Premium pest management solutions</p>
     <div class="social">
       <a href="https://www.instagram.com/" title="Instagram">📷</a>
       <a href="https://www.tiktok.com/@user4156545939671" title="TikTok">🎵</a>
