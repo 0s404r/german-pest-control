@@ -119,6 +119,19 @@ footer{background:var(--dark);color:#cdd8cd;padding:50px 0 20px;text-align:cente
 footer .fnav{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-bottom:18px;}
 footer .copy{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;font-size:14px;opacity:.7;}
 
+/* Works / Portfolio */
+.works{background:var(--bg);}
+.works .work-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;}
+.work-item{background:#fff;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);transition:.3s;}
+.work-item:hover{transform:translateY(-8px);}
+.work-item .work-img{height:220px;overflow:hidden;position:relative;}
+.work-item .work-img img{width:100%;height:100%;object-fit:cover;transition:.4s;}
+.work-item:hover .work-img img{transform:scale(1.08);}
+.work-item .work-tag{position:absolute;top:14px;right:14px;background:var(--green);color:#fff;padding:6px 16px;border-radius:50px;font-size:13px;font-weight:700;}
+.work-item .work-body{padding:22px 24px;}
+.work-item .work-body h3{color:var(--green-dark);font-size:19px;font-weight:800;margin-bottom:8px;}
+.work-item .work-body p{color:#5a6a5a;font-size:15px;}
+
 /* Floating WhatsApp */
 .float-wa{position:fixed;bottom:26px;left:26px;width:62px;height:62px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;color:#fff;box-shadow:0 8px 24px rgba(37,211,102,.5);z-index:1500;animation:pulse 2s infinite;}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
@@ -144,6 +157,7 @@ footer .copy{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;font-siz
       <a href="#services">خدماتنا</a>
       <a href="#about">من نحن</a>
       <a href="#areas">مناطق الخدمة</a>
+<a href="#works">سابقة الأعمال</a>
       <a href="#contact">تواصل معنا</a>
       <a href="tel:+201015335554" class="btn">📞 اتصل الآن</a>
     </div>
@@ -161,6 +175,7 @@ footer .copy{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;font-siz
       <a href="tel:+201015335554" class="btn btn-gold">📞 01015335554</a>
       <a href="https://wa.me/201015335554" class="btn btn-wa">💬 واتساب</a>
       <a href="#services" class="btn">تعرف على خدماتنا</a>
+<a href="#works" class="btn btn-gold">🖼️ سابقة الأعمال</a>
     </div>
   </div>
 </section>
@@ -242,6 +257,42 @@ footer .copy{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;font-siz
 <span class="chip">📍 العبور</span>
     </div>
   </div>
+</section>
+
+<section class="works" id="works">
+<div class="container">
+<div class="sec-head">
+<span class="kick">Our Work</span>
+<h2>سابقة الأعمال</h2>
+<p>نماذج من أعمالنا في مكافحة الحشرات والقوارض للفلل والمنازل والشركات بأعلى معايير الجودة.</p>
+</div>
+<div class="work-grid">
+<div class="work-item">
+<div class="work-img"><span class="work-tag">مكافحة صراصير</span><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80" alt="مكافحة صراصير - فيلا بالشيخ زايد"></div>
+<div class="work-body"><h3>فيلا بالشيخ زايد</h3><p>معالجة شاملة للصراصير مع ضمان عدم العودة ومتابعة دورية.</p></div>
+</div>
+<div class="work-item">
+<div class="work-img"><span class="work-tag">النمل الأبيض</span><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="مكافحة النمل الأبيض - كمبوند بالتجمع"></div>
+<div class="work-body"><h3>كمبوند بالتجمع</h3><p>حقن متطور لمكافحة النمل الأبيض وحماية أساسات المنزل.</p></div>
+</div>
+<div class="work-item">
+<div class="work-img"><span class="work-tag">القوارض</span><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="مكافحة القوارض - مطعم بمدينة نصر"></div>
+<div class="work-body"><h3>مطعم بمدينة نصر</h3><p>خطة متكاملة للتخلص من القوارض وإغلاق منافذ الدخول نهائياً.</p></div>
+</div>
+<div class="work-item">
+<div class="work-img"><span class="work-tag">تعقيم شامل</span><img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80" alt="تعقيم شامل - شقة بالرحاب"></div>
+<div class="work-body"><h3>شقة بالرحاب</h3><p>رش وتعقيم كامل يمنع تكاثر الحشرات ويحمي الأسرة.</p></div>
+</div>
+<div class="work-item">
+<div class="work-img"><span class="work-tag">بق الفراش</span><img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80" alt="مكافحة بق الفراش - فيلا بالساحل الشمالي"></div>
+<div class="work-body"><h3>فيلا بالساحل الشمالي</h3><p>معالجة متخصصة لبق الفراش تضمن راحة ونوم آمن.</p></div>
+</div>
+<div class="work-item">
+<div class="work-img"><span class="work-tag">عقد سنوي</span><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="عقد سنوي - شركة بالجيزة"></div>
+<div class="work-body"><h3>شركة بالجيزة</h3><p>عقد متابعة دورية للشركات بضمان يصل إلى 3 سنوات.</p></div>
+</div>
+</div>
+</div>
 </section>
 
 <section class="contact" id="contact">
