@@ -191,10 +191,37 @@ footer .copy{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;font-siz
 .hero-content > *,.reveal,.reveal-title{animation:none;opacity:1;transform:none;}
 .hero-logo{animation:none;}
 }
+
+/* ===== PRO Polish ===== */
+header{transition:background .35s ease,box-shadow .35s ease;}
+header.at-top{background:rgba(255,255,255,.06)!important;box-shadow:none!important;backdrop-filter:blur(6px);}
+header.at-top .logo{color:#fff!important;}
+header.at-top .nav-links a{color:#fff!important;}
+.btn{position:relative;overflow:hidden;letter-spacing:.3px;}
+.btn::after{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);transition:left .6s ease;}
+.btn:hover::after{left:130%;}
+.hero h1{text-shadow:0 4px 24px rgba(0,0,0,.35);letter-spacing:.5px;}
+.hero p{text-shadow:0 2px 12px rgba(0,0,0,.3);}
+.badge{backdrop-filter:blur(4px);box-shadow:0 4px 18px rgba(0,0,0,.2);}
+.sec-head h2{position:relative;display:inline-block;}
+.sec-head h2::after{content:"";display:block;width:64px;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--gold),var(--green-light));margin:14px auto 0;}
+.card{border-top-width:0;position:relative;overflow:hidden;}
+.card::before{content:"";position:absolute;top:0;right:0;left:0;height:4px;background:linear-gradient(90deg,var(--green),var(--green-light));transform:scaleX(0);transform-origin:right;transition:transform .4s ease;}
+.card:hover::before{transform:scaleX(1);}
+.card:hover{box-shadow:0 22px 45px rgba(30,90,50,.20);}
+.card .ic{transition:transform .4s cubic-bezier(.34,1.56,.64,1);}
+.card:hover .ic{transform:scale(1.1) rotate(-4deg);}
+.stat h3{transition:transform .3s ease;}
+.stat:hover h3{transform:scale(1.08);}
+.chip{transition:all .3s ease;}
+.chip:hover{background:var(--green);color:#fff;border-color:var(--green);}
+#toTop{position:fixed;bottom:26px;right:26px;width:52px;height:52px;border-radius:50%;background:var(--green-dark);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(20px);transition:.35s;z-index:1400;box-shadow:0 8px 22px rgba(0,0,0,.25);}
+#toTop.show{opacity:1;pointer-events:auto;transform:translateY(0);}
+#toTop:hover{background:var(--green);transform:translateY(-4px);}
 </style>
 </head>
 <body>
-<header>
+<header class="at-top">
   <nav>
     <a href="#" class="logo"><img src="logo.png" alt="شعار الشركة الألمانية لمكافحة الحشرات"> <span>الشركة الألمانية<br>لمكافحة الحشرات</span></a>
     <div class="nav-links" id="navLinks">
@@ -425,6 +452,22 @@ document.addEventListener('DOMContentLoaded',function(){
     el.style.transitionDelay=((i%4)*0.08)+'s'; io.observe(el);
   });
 });
+</script>
+
+<div id="toTop" title="لأعلى">&#8593;</div>
+<script>
+(function(){
+  var header=document.querySelector('header');
+  function onScroll(){ if(window.scrollY<60){header.classList.add('at-top');}else{header.classList.remove('at-top');} }
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+  var b=document.getElementById('toTop');
+  b.onclick=function(){window.scrollTo({top:0,behavior:'smooth'});};
+  window.addEventListener('scroll',function(){ b.classList.toggle('show', window.scrollY>500); },{passive:true});
+  function animateCount(el){ var raw=el.textContent.trim(); var m=raw.match(/^([\d.]+)(.*)$/); if(!m)return; var target=parseFloat(m[1]); var suffix=m[2]; var hasDot=m[1].indexOf('.')>-1; var dur=1400; var t0=performance.now();
+    function step(now){ var p=Math.min((now-t0)/dur,1); var val=target*(0.5-Math.cos(p*Math.PI)/2); el.textContent=(hasDot?val.toFixed(1):Math.round(val))+suffix; if(p<1)requestAnimationFrame(step); else el.textContent=raw; } requestAnimationFrame(step); }
+  var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){animateCount(e.target);cio.unobserve(e.target);}})},{threshold:.5});
+  document.querySelectorAll('.stat h3').forEach(function(s){cio.observe(s);});
+})();
 </script>
 </body>
 </html>
