@@ -820,7 +820,7 @@ if (hasGsap && !reduce){
       var track = document.getElementById('wkTrack');
       var pinEl = document.getElementById('wkPin');
       var maxX = function(){ return Math.max(0, track.scrollWidth - pinEl.clientWidth); };
-      var getX = function(){ return -maxX(); };
+      var getX = function(){ return maxX(); };
       gsap.to(track,{x:getX,ease:'none',
         scrollTrigger:{trigger:'#wkPin',start:'top top',end:function(){return '+=' + maxX();},
           scrub:1,pin:true,anticipatePin:1,invalidateOnRefresh:true}});
