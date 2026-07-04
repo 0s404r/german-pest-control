@@ -3,594 +3,891 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>الشركة الألمانية لمكافحة الحشرات | German Pest Control</title>
-<meta name="description" content="الشركة الألمانية لمكافحة الحشرات - الشركة الوحيدة المرخصة والموثقة من وزارة الصحة المصرية. حلول احترافية لمكافحة الحشرات والقوارض للمنازل والفلل والكمبوندات بضمان يصل إلى 3 سنوات.">
+<title>الشركة الألمانية لمكافحة الحشرات | German Pest Control — حماية بمعايير ألمانية</title>
+<meta name="description" content="الشركة الوحيدة المرخصة والموثقة من وزارة الصحة المصرية لمكافحة الحشرات والقوارض. حلول Premium للفلل والقصور والكمبوندات بضمان يصل إلى 3 سنوات. القاهرة، الإسكندرية، الساحل الشمالي.">
+<meta property="og:title" content="الشركة الألمانية لمكافحة الحشرات — حماية بمعايير ألمانية">
+<meta property="og:description" content="حلول مكافحة آفات Premium للفلل والكمبوندات. مرخصة من وزارة الصحة. ضمان حتى 3 سنوات.">
+<meta property="og:image" content="https://germancontrol.net/work4.jpg">
+<meta property="og:type" content="website">
 <link rel="icon" href="https://germancontrol.net/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"الشركة الألمانية لمكافحة الحشرات","alternateName":"German Pest Control","url":"https://germancontrol.net","logo":"https://germancontrol.net/logo.png","telephone":"+201015335554","openingHours":"Mo-Su 00:00-24:00","address":[{"@type":"PostalAddress","addressLocality":"القاهرة","streetAddress":"مدينة نصر، ٥٢ شارع الطيران"},{"@type":"PostalAddress","addressLocality":"الإسكندرية","streetAddress":"كامب شيزار"}],"areaServed":["القاهرة","الجيزة","الإسكندرية","الساحل الشمالي","التجمع الخامس","الشيخ زايد"]}
+</script>
 <style>
+/* ============================================================
+   GERMAN PEST CONTROL — PREMIUM EDITION
+   Palette: deep pine, champagne gold, ivory
+   ============================================================ */
 :root{
-  --ink:#0D2018;
-  --forest:#0F3D2C;
-  --forest-2:#155941;
-  --emerald:#1E8A5E;
-  --mint:#E8F3EE;
-  --gold:#C8A24B;
-  --gold-soft:#E9D9AE;
-  --paper:#F6F8F7;
-  --white:#FFFFFF;
-  --text:#22332C;
-  --muted:#5C6E66;
-  --radius:18px;
-  --shadow:0 10px 30px rgba(13,32,24,.10);
-  --shadow-lg:0 24px 60px rgba(13,32,24,.16);
-  --font-display:'Alexandria',sans-serif;
-  --font-body:'IBM Plex Sans Arabic',sans-serif;
+  --black:#080D0B;
+  --pine:#0C231A;
+  --pine-2:#102F22;
+  --pine-3:#154033;
+  --emerald:#1F8F60;
+  --gold:#C6A15B;
+  --gold-2:#E9D8AC;
+  --ivory:#F4F1E8;
+  --paper:#F8F6F0;
+  --text:#22312B;
+  --muted:#66756E;
+  --line:rgba(198,161,91,.28);
+  --line-dark:rgba(255,255,255,.09);
+  --dsp:'Alexandria',sans-serif;
+  --body:'IBM Plex Sans Arabic',sans-serif;
+  --ease:cubic-bezier(.19,1,.22,1);
 }
 *{margin:0;padding:0;box-sizing:border-box}
+::selection{background:var(--gold);color:var(--black)}
 html{scroll-behavior:smooth}
-body{font-family:var(--font-body);color:var(--text);background:var(--paper);line-height:1.8;overflow-x:hidden}
+body{font-family:var(--body);background:var(--paper);color:var(--text);line-height:1.9;overflow-x:hidden}
 img{max-width:100%;display:block}
-a{text-decoration:none;color:inherit}
-h1,h2,h3,h4{font-family:var(--font-display);line-height:1.4;color:var(--ink)}
-.container{width:min(1180px,92%);margin-inline:auto}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--dsp);color:var(--pine);line-height:1.35}
+.wrap{width:min(1240px,90%);margin-inline:auto}
 
-/* ===== Reveal on scroll ===== */
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.22,.61,.36,1),transform .8s cubic-bezier(.22,.61,.36,1)}
-.reveal.in{opacity:1;transform:none}
-.reveal[data-delay="1"]{transition-delay:.12s}
-.reveal[data-delay="2"]{transition-delay:.24s}
-.reveal[data-delay="3"]{transition-delay:.36s}
-.reveal[data-delay="4"]{transition-delay:.48s}
+/* ---------- Grain overlay ---------- */
+body::after{content:"";position:fixed;inset:0;z-index:2000;pointer-events:none;opacity:.05;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E")}
 
-/* ===== Nav ===== */
-.nav{position:fixed;inset-inline:0;top:0;z-index:100;transition:background .35s,box-shadow .35s,padding .35s;padding:18px 0}
-.nav.scrolled{background:rgba(15,61,44,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 6px 24px rgba(0,0,0,.18);padding:10px 0}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:12px;color:#fff}
-.brand img{width:46px;height:46px;border-radius:12px;background:#fff;padding:4px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
-.brand-name{font-family:var(--font-display);font-weight:700;font-size:.95rem;color:#fff}
-.brand-sub{font-size:.7rem;color:var(--gold-soft);letter-spacing:.06em}
-.nav-links{display:flex;align-items:center;gap:26px;list-style:none}
-.nav-links a{color:rgba(255,255,255,.85);font-size:.92rem;font-weight:500;position:relative;padding:4px 0;transition:color .25s}
-.nav-links a::after{content:"";position:absolute;bottom:0;right:0;width:0;height:2px;background:var(--gold);border-radius:2px;transition:width .3s}
-.nav-links a:hover{color:#fff}
-.nav-links a:hover::after{width:100%}
-.nav-cta{background:var(--gold);color:var(--ink)!important;font-weight:700;padding:10px 22px;border-radius:999px;box-shadow:0 6px 18px rgba(200,162,75,.35);transition:transform .25s,box-shadow .25s}
-.nav-cta:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(200,162,75,.5)}
-.nav-cta::after{display:none}
-.burger{display:none;background:none;border:0;cursor:pointer;width:42px;height:42px;border-radius:10px;background:rgba(255,255,255,.12)}
-.burger span{display:block;width:20px;height:2px;background:#fff;margin:4px auto;border-radius:2px;transition:.3s}
-.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
-.burger.open span:nth-child(2){opacity:0}
-.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+/* ---------- Preloader ---------- */
+#loader{position:fixed;inset:0;z-index:3000;background:var(--black);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px}
+#loader img{width:88px;height:88px;background:#fff;border-radius:22px;padding:9px;box-shadow:0 0 60px rgba(198,161,91,.25)}
+#loader .ld-name{font-family:var(--dsp);color:var(--gold-2);font-weight:600;font-size:.95rem;letter-spacing:.12em}
+#loader .ld-bar{width:210px;height:1px;background:rgba(255,255,255,.14);overflow:hidden}
+#loader .ld-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--gold),var(--gold-2))}
+#loader .ld-num{font-family:var(--dsp);color:rgba(255,255,255,.4);font-size:.8rem;letter-spacing:.15em}
 
-/* ===== Hero ===== */
-.hero{position:relative;min-height:100svh;display:flex;align-items:center;background:
-  radial-gradient(1100px 600px at 85% -10%, rgba(30,138,94,.45), transparent 60%),
-  radial-gradient(800px 500px at 10% 110%, rgba(200,162,75,.16), transparent 60%),
-  linear-gradient(160deg,#0C2E21 0%, var(--forest) 55%, #0A241A 100%);
-  overflow:hidden;padding:130px 0 90px}
-.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px);background-size:26px 26px;mask-image:linear-gradient(to bottom,transparent,black 30%,black 70%,transparent)}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;position:relative;z-index:2}
-.badge-license{display:inline-flex;align-items:center;gap:10px;background:rgba(200,162,75,.14);border:1px solid rgba(200,162,75,.45);color:var(--gold-soft);padding:9px 18px;border-radius:999px;font-size:.85rem;font-weight:600;margin-bottom:26px}
-.badge-license svg{flex-shrink:0}
-.hero h1{color:#fff;font-size:clamp(1.9rem,4.4vw,3.4rem);font-weight:800;margin-bottom:20px}
-.hero h1 em{font-style:normal;color:var(--gold);position:relative;white-space:nowrap}
-.hero p.lead{color:rgba(255,255,255,.82);font-size:1.08rem;max-width:56ch;margin-bottom:34px}
-.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:44px}
-.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;font-size:1rem;padding:15px 30px;border-radius:999px;transition:transform .25s,box-shadow .25s,background .25s;cursor:pointer}
-.btn-gold{background:var(--gold);color:var(--ink);box-shadow:0 10px 30px rgba(200,162,75,.35)}
-.btn-gold:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(200,162,75,.5)}
-.btn-wa{background:#1FAF64;color:#fff;box-shadow:0 10px 30px rgba(31,175,100,.35)}
-.btn-wa:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(31,175,100,.5)}
-.btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.25)}
-.btn-ghost:hover{background:rgba(255,255,255,.16);transform:translateY(-3px)}
-.hero-trust{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.chip{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:14px;padding:14px 12px;text-align:center;color:rgba(255,255,255,.9);font-size:.8rem;font-weight:600;transition:background .3s,transform .3s}
-.chip:hover{background:rgba(255,255,255,.13);transform:translateY(-3px)}
-.chip svg{display:block;margin:0 auto 8px;color:var(--gold)}
+/* ---------- Custom cursor ---------- */
+#cursor{position:fixed;top:0;left:0;width:10px;height:10px;border-radius:50%;background:var(--gold);z-index:2600;pointer-events:none;mix-blend-mode:difference;transform:translate(-50%,-50%)}
+#cursorRing{position:fixed;top:0;left:0;width:38px;height:38px;border-radius:50%;border:1px solid var(--gold);z-index:2600;pointer-events:none;transform:translate(-50%,-50%);opacity:.6;transition:width .3s var(--ease),height .3s var(--ease),opacity .3s}
+#cursorRing.grow{width:64px;height:64px;opacity:1}
+@media (pointer:coarse){#cursor,#cursorRing{display:none}}
 
-/* Hero shield visual */
-.hero-visual{position:relative;display:flex;align-items:center;justify-content:center;min-height:420px}
-.shield-core{position:relative;z-index:3;width:220px;height:220px;border-radius:50%;background:linear-gradient(150deg,#134632,#0C2C1F);border:1px solid rgba(200,162,75,.4);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;box-shadow:0 30px 80px rgba(0,0,0,.45), inset 0 0 40px rgba(30,138,94,.25)}
-.shield-core img{width:96px;height:96px;border-radius:20px;background:#fff;padding:8px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
-.shield-core span{font-family:var(--font-display);font-weight:700;color:var(--gold-soft);font-size:.8rem;letter-spacing:.08em}
-.ring{position:absolute;border-radius:50%;border:1px solid rgba(200,162,75,.35)}
-.ring.r1{width:300px;height:300px;animation:pulseRing 3.6s ease-out infinite}
-.ring.r2{width:300px;height:300px;animation:pulseRing 3.6s ease-out 1.2s infinite}
-.ring.r3{width:300px;height:300px;animation:pulseRing 3.6s ease-out 2.4s infinite}
-@keyframes pulseRing{0%{transform:scale(.72);opacity:.9}100%{transform:scale(1.55);opacity:0}}
-.orbit-tag{position:absolute;background:rgba(255,255,255,.96);color:var(--ink);font-size:.78rem;font-weight:700;padding:9px 16px;border-radius:999px;box-shadow:var(--shadow);display:flex;align-items:center;gap:7px;animation:floatY 5s ease-in-out infinite}
-.orbit-tag svg{color:var(--emerald)}
-.tag-1{top:6%;right:8%;animation-delay:0s}
-.tag-2{bottom:14%;right:0;animation-delay:1.3s}
-.tag-3{top:38%;left:0;animation-delay:2.2s}
-@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+/* ---------- Nav ---------- */
+#nav{position:fixed;inset-inline:0;top:0;z-index:1000;transition:transform .5s var(--ease),background .4s,box-shadow .4s;padding:20px 0}
+#nav.solid{background:rgba(8,13,11,.82);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 1px 0 var(--line-dark);padding:13px 0}
+#nav.hide{transform:translateY(-110%)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:13px}
+.brand img{width:48px;height:48px;background:#fff;border-radius:13px;padding:5px}
+.brand .bn{font-family:var(--dsp);font-weight:700;font-size:.92rem;color:#fff;display:block;line-height:1.4}
+.brand .bs{font-size:.62rem;color:var(--gold-2);letter-spacing:.22em}
+.nav-l{display:flex;align-items:center;gap:30px;list-style:none}
+.nav-l a{color:rgba(255,255,255,.78);font-size:.9rem;font-weight:500;position:relative;transition:color .3s}
+.nav-l a:not(.ncta)::after{content:"";position:absolute;bottom:-6px;right:0;width:0;height:1px;background:var(--gold);transition:width .35s var(--ease)}
+.nav-l a:hover{color:#fff}
+.nav-l a:hover::after{width:100%}
+.ncta{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);color:var(--gold-2)!important;padding:11px 24px;border-radius:999px;font-weight:600;transition:background .35s,color .35s,border-color .35s}
+.ncta:hover{background:var(--gold);border-color:var(--gold);color:var(--black)!important}
+#burger{display:none;background:none;border:1px solid var(--line-dark);border-radius:11px;width:44px;height:44px;cursor:pointer;position:relative;z-index:1200}
+#burger span{display:block;width:19px;height:1.6px;background:#fff;margin:4.5px auto;border-radius:2px;transition:.35s var(--ease)}
+#burger.open span:nth-child(1){transform:translateY(6.1px) rotate(45deg)}
+#burger.open span:nth-child(2){opacity:0}
+#burger.open span:nth-child(3){transform:translateY(-6.1px) rotate(-45deg)}
 
-/* Hero load-in sequence */
-.h-anim{opacity:0;transform:translateY(26px);animation:heroIn .9s cubic-bezier(.22,.61,.36,1) forwards}
-.h-anim.d1{animation-delay:.1s}.h-anim.d2{animation-delay:.25s}.h-anim.d3{animation-delay:.4s}
-.h-anim.d4{animation-delay:.55s}.h-anim.d5{animation-delay:.7s}
-@keyframes heroIn{to{opacity:1;transform:none}}
+/* ---------- Hero ---------- */
+#hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--black)}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;transform:scale(1.12);opacity:.55;will-change:transform}
+.hero-bg::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(8,13,11,.72) 0%,rgba(8,13,11,.35) 40%,rgba(8,13,11,.92) 100%),
+  radial-gradient(900px 500px at 85% 20%,rgba(31,143,96,.28),transparent 60%)}
+.hero-in{position:relative;z-index:2;padding:170px 0 0;width:100%}
+.h-badge{display:inline-flex;align-items:center;gap:11px;border:1px solid var(--line);background:rgba(198,161,91,.08);backdrop-filter:blur(8px);color:var(--gold-2);padding:11px 22px;border-radius:999px;font-size:.84rem;font-weight:500;margin-bottom:34px}
+.h-badge svg{flex-shrink:0}
+#hero h1{color:#fff;font-weight:800;font-size:clamp(2.2rem,5.6vw,4.6rem);line-height:1.28;max-width:19ch;margin-bottom:26px}
+#hero h1 .l{display:block;overflow:hidden}
+#hero h1 .li{display:block;transform:translateY(110%)}
+#hero h1 em{font-style:normal;background:linear-gradient(100deg,var(--gold) 20%,var(--gold-2) 50%,var(--gold) 80%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 5s linear infinite}
+@keyframes shimmer{to{background-position:200% center}}
+.h-sub{color:rgba(255,255,255,.72);font-size:1.06rem;font-weight:300;max-width:52ch;margin-bottom:42px}
+.h-cta{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:76px}
+.btn{position:relative;display:inline-flex;align-items:center;gap:11px;font-family:var(--dsp);font-weight:600;font-size:.98rem;padding:17px 36px;border-radius:999px;cursor:pointer;overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s,color .4s;will-change:transform}
+.btn .bg{position:absolute;inset:0;border-radius:inherit;transition:transform .5s var(--ease)}
+.btn span,.btn svg{position:relative;z-index:1}
+.b-gold{color:var(--black)}
+.b-gold .bg{background:linear-gradient(120deg,var(--gold),var(--gold-2))}
+.b-gold:hover{box-shadow:0 18px 44px rgba(198,161,91,.35)}
+.b-line{color:#fff;border:1px solid rgba(255,255,255,.3)}
+.b-line .bg{background:rgba(255,255,255,.12);transform:scaleX(0);transform-origin:left}
+.b-line:hover .bg{transform:scaleX(1)}
+.b-wa{color:#fff}
+.b-wa .bg{background:#1CA85F}
+.b-wa:hover{box-shadow:0 18px 44px rgba(28,168,95,.4)}
+.h-strip{border-top:1px solid var(--line-dark);display:grid;grid-template-columns:repeat(4,1fr);backdrop-filter:blur(6px)}
+.h-strip>div{padding:26px 10px;text-align:center;border-inline-start:1px solid var(--line-dark)}
+.h-strip>div:first-child{border-inline-start:0}
+.h-strip b{display:block;font-family:var(--dsp);font-weight:800;font-size:clamp(1.3rem,2.4vw,1.9rem);color:var(--gold-2)}
+.h-strip small{color:rgba(255,255,255,.55);font-size:.8rem;font-weight:400}
+.scroll-cue{position:absolute;bottom:132px;left:5%;z-index:3;display:flex;flex-direction:column;align-items:center;gap:10px;color:rgba(255,255,255,.5);font-size:.68rem;letter-spacing:.28em}
+.scroll-cue::after{content:"";width:1px;height:56px;background:linear-gradient(var(--gold),transparent);animation:cue 2.2s var(--ease) infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 
-/* ===== Sections ===== */
-section{padding:96px 0}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--emerald);font-weight:700;font-size:.85rem;letter-spacing:.04em;margin-bottom:12px}
-.eyebrow::before{content:"";width:26px;height:2px;background:var(--gold);border-radius:2px}
-.sec-title{font-size:clamp(1.6rem,3.2vw,2.4rem);font-weight:800;margin-bottom:14px}
-.sec-sub{color:var(--muted);max-width:62ch;font-size:1.02rem}
-.sec-head{margin-bottom:52px}
-.sec-head.center{text-align:center}
-.sec-head.center .eyebrow::before{display:none}
-.sec-head.center .sec-sub{margin-inline:auto}
+/* ---------- Section scaffolding ---------- */
+section{padding:120px 0;position:relative}
+.eyeb{display:flex;align-items:center;gap:14px;color:var(--gold);font-family:var(--dsp);font-weight:600;font-size:.8rem;letter-spacing:.24em;margin-bottom:20px}
+.eyeb::before{content:"";width:44px;height:1px;background:var(--gold)}
+.t-xl{font-size:clamp(1.9rem,4vw,3.1rem);font-weight:800;margin-bottom:18px}
+.t-sub{color:var(--muted);font-weight:300;font-size:1.05rem;max-width:60ch}
+.head{margin-bottom:70px}
+.dark{background:var(--pine);color:#fff}
+.dark h2,.dark h3{color:#fff}
+.dark .t-sub{color:rgba(255,255,255,.62)}
 
-/* ===== Services ===== */
-#services{background:var(--white)}
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.svc{background:var(--paper);border:1px solid #E5ECE8;border-radius:var(--radius);padding:34px 28px;position:relative;overflow:hidden;transition:transform .35s,box-shadow .35s,border-color .35s}
-.svc::before{content:"";position:absolute;inset-inline:0;top:0;height:3px;background:linear-gradient(90deg,var(--emerald),var(--gold));transform:scaleX(0);transform-origin:right;transition:transform .4s}
-.svc:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:transparent}
-.svc:hover::before{transform:scaleX(1)}
-.svc-icon{width:60px;height:60px;border-radius:16px;background:var(--mint);color:var(--forest-2);display:flex;align-items:center;justify-content:center;margin-bottom:20px;transition:background .35s,color .35s,transform .35s}
-.svc:hover .svc-icon{background:var(--forest);color:var(--gold);transform:rotate(-6deg) scale(1.06)}
-.svc h3{font-size:1.12rem;font-weight:700;margin-bottom:10px}
-.svc p{color:var(--muted);font-size:.94rem}
+/* ---------- Trust marquee ---------- */
+#trust{background:var(--black);padding:0;border-block:1px solid var(--line)}
+.tm-wrap{overflow:hidden;mask-image:linear-gradient(to left,transparent,#000 6%,#000 94%,transparent)}
+.tm{display:flex;gap:0;width:max-content;direction:ltr;animation:mq 34s linear infinite}
+.tm-i{display:inline-flex;align-items:center;gap:14px;color:rgba(255,255,255,.75);font-family:var(--dsp);font-weight:500;font-size:.92rem;padding:22px 38px;white-space:nowrap}
+.tm-i svg{color:var(--gold);flex-shrink:0}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-/* ===== About ===== */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.about-card{background:linear-gradient(160deg,var(--forest),#0B2A1E);border-radius:26px;padding:44px 38px;color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow-lg)}
-.about-card::after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(200,162,75,.22),transparent 70%);top:-120px;left:-120px}
-.about-card img{width:84px;height:84px;background:#fff;border-radius:20px;padding:8px;margin-bottom:22px;box-shadow:0 10px 30px rgba(0,0,0,.3)}
-.about-card h3{color:#fff;font-size:1.3rem;margin-bottom:8px}
-.about-card p{color:rgba(255,255,255,.75);font-size:.92rem}
-.check-list{list-style:none;margin:26px 0 34px;display:grid;gap:14px}
-.check-list li{display:flex;align-items:flex-start;gap:12px;font-weight:600;color:var(--ink)}
-.check-list li svg{flex-shrink:0;margin-top:5px;color:var(--emerald)}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
-.stat{background:var(--white);border:1px solid #E5ECE8;border-radius:var(--radius);padding:26px 14px;text-align:center;transition:transform .3s,box-shadow .3s}
-.stat:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
-.stat b{display:block;font-family:var(--font-display);font-size:clamp(1.5rem,2.6vw,2.1rem);font-weight:800;color:var(--forest-2)}
-.stat b .u{color:var(--gold);font-size:.7em}
-.stat span{font-size:.85rem;color:var(--muted);font-weight:600}
+/* ---------- Services ---------- */
+#services{background:var(--paper)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #E3E0D4;border-inline-start:1px solid #E3E0D4}
+.svc{position:relative;padding:52px 40px 46px;border-bottom:1px solid #E3E0D4;border-inline-end:1px solid #E3E0D4;background:var(--paper);transition:background .5s var(--ease);overflow:hidden}
+.svc::after{content:"";position:absolute;inset-inline:0;bottom:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--emerald));transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
+.svc:hover{background:#fff}
+.svc:hover::after{transform:scaleX(1)}
+.svc .num{font-family:var(--dsp);font-weight:800;font-size:.85rem;color:var(--gold);letter-spacing:.18em;display:block;margin-bottom:30px}
+.svc .ic{width:58px;height:58px;color:var(--pine-3);margin-bottom:26px;transition:transform .5s var(--ease),color .4s}
+.svc:hover .ic{transform:translateY(-6px);color:var(--emerald)}
+.svc h3{font-size:1.18rem;font-weight:700;margin-bottom:12px}
+.svc p{color:var(--muted);font-size:.92rem;font-weight:300}
 
-/* ===== Areas marquee ===== */
-#areas{background:var(--forest);padding:80px 0;overflow:hidden}
-#areas .sec-title,#areas h2{color:#fff}
-#areas .eyebrow{color:var(--gold)}
-#areas .sec-sub{color:rgba(255,255,255,.7)}
-.marquee{display:flex;gap:16px;width:max-content;animation:scrollX 30s linear infinite;margin-top:14px}
-.marquee:hover{animation-play-state:paused}
-.marquee-wrap{mask-image:linear-gradient(to left,transparent,black 8%,black 92%,transparent);padding:10px 0}
-.area-pill{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#fff;padding:13px 26px;border-radius:999px;font-weight:600;font-size:.95rem;white-space:nowrap;transition:background .3s,border-color .3s}
-.area-pill:hover{background:rgba(200,162,75,.18);border-color:rgba(200,162,75,.5)}
-.area-pill svg{color:var(--gold)}
-@keyframes scrollX{from{transform:translateX(0)}to{transform:translateX(50%)}}
+/* ---------- Big stats ---------- */
+#stats{background:var(--pine);padding:110px 0;overflow:hidden}
+#stats::before{content:"";position:absolute;inset:0;background:radial-gradient(800px 400px at 12% 0%,rgba(198,161,91,.12),transparent 65%)}
+.st-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.st{padding:12px 26px;border-inline-start:1px solid var(--line-dark)}
+.st:first-child{border-inline-start:0}
+.st b{display:block;font-family:var(--dsp);font-weight:900;font-size:clamp(2.6rem,5.5vw,4.4rem);color:#fff;line-height:1.15}
+.st b .g{color:var(--gold)}
+.st span{color:rgba(255,255,255,.55);font-size:.92rem;font-weight:300}
 
-/* ===== Works ===== */
-#works{background:var(--white)}
-.works-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
-.work{background:var(--paper);border:1px solid #E5ECE8;border-radius:22px;overflow:hidden;transition:transform .35s,box-shadow .35s}
-.work:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
-.work-media{position:relative;aspect-ratio:16/9.6;overflow:hidden}
-.work-media img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.22,.61,.36,1)}
-.work:hover .work-media img{transform:scale(1.07)}
-.work-tag{position:absolute;top:14px;right:14px;background:rgba(13,32,24,.78);backdrop-filter:blur(6px);color:var(--gold-soft);font-size:.76rem;font-weight:700;padding:7px 14px;border-radius:999px;border:1px solid rgba(200,162,75,.4)}
-.work-body{padding:26px 26px 30px}
-.work-body h3{font-size:1.05rem;font-weight:700;margin-bottom:10px}
-.work-body p{color:var(--muted);font-size:.9rem}
+/* ---------- About / editorial ---------- */
+#about{background:var(--paper);overflow:hidden}
+.ab-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:center}
+.ab-media{position:relative;height:640px}
+.ab-img{position:absolute;overflow:hidden;border-radius:4px;box-shadow:0 40px 90px rgba(12,35,26,.28)}
+.ab-img img{width:100%;height:100%;object-fit:cover;transform:scale(1.15);will-change:transform}
+.ab-1{width:72%;height:76%;top:0;right:0;z-index:1}
+.ab-2{width:52%;height:48%;bottom:0;left:0;z-index:2;border:6px solid var(--paper)}
+.ab-seal{position:absolute;z-index:3;top:58%;right:-14px;width:128px;height:128px;animation:spin 22s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ab-seal .core{position:absolute;inset:32px;background:var(--pine);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);animation:spin 22s linear infinite reverse}
+.chk{list-style:none;margin:34px 0 44px;display:grid;gap:0}
+.chk li{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid #E3E0D4;font-family:var(--dsp);font-weight:600;color:var(--pine);font-size:1.02rem}
+.chk li:first-child{border-top:1px solid #E3E0D4}
+.chk li svg{flex-shrink:0;color:var(--gold);margin-top:6px}
+.chk li small{display:block;font-family:var(--body);font-weight:300;color:var(--muted);font-size:.88rem;margin-top:4px}
 
-/* ===== Contact ===== */
-.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:26px}
-.c-card{background:var(--white);border:1px solid #E5ECE8;border-radius:var(--radius);padding:32px 26px;text-align:center;transition:transform .3s,box-shadow .3s}
-.c-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
-.c-card .svc-icon{margin-inline:auto}
-.c-card h4{font-size:1.05rem;margin-bottom:10px}
-.c-card a{display:block;color:var(--forest-2);font-weight:700;direction:ltr;transition:color .25s}
-.c-card a:hover{color:var(--gold)}
-.c-card p{color:var(--muted);font-size:.92rem}
-.branches{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.branch{background:var(--mint);border:1px solid #D8E8E0;border-radius:var(--radius);padding:26px 28px;display:flex;gap:16px;align-items:flex-start}
-.branch svg{flex-shrink:0;color:var(--forest-2);margin-top:4px}
-.branch h4{font-size:1rem;margin-bottom:6px}
-.branch p{color:var(--muted);font-size:.92rem}
+/* ---------- Process ---------- */
+#process{background:#fff}
+.pr-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:44px;position:relative;margin-top:80px}
+.pr-line{position:absolute;top:29px;inset-inline:29px;height:1px;background:#E3E0D4;z-index:0}
+.pr-fill{height:100%;width:0%;background:var(--gold)}
+.pr{position:relative;z-index:1}
+.pr .dot{width:58px;height:58px;border-radius:50%;background:#fff;border:1px solid #E3E0D4;display:flex;align-items:center;justify-content:center;font-family:var(--dsp);font-weight:800;color:var(--gold);margin-bottom:26px;transition:background .5s,border-color .5s,color .5s,box-shadow .5s}
+.pr.lit .dot{background:var(--pine);border-color:var(--pine);color:var(--gold-2);box-shadow:0 14px 34px rgba(12,35,26,.3)}
+.pr h3{font-size:1.08rem;font-weight:700;margin-bottom:10px}
+.pr p{color:var(--muted);font-size:.9rem;font-weight:300}
 
-/* ===== CTA band ===== */
-.cta-band{background:
-  radial-gradient(700px 400px at 15% 0%, rgba(200,162,75,.25), transparent 60%),
-  linear-gradient(150deg,var(--forest),#0B2A1E);
-  border-radius:30px;padding:70px 50px;text-align:center;color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow-lg)}
-.cta-band h2{color:#fff;font-size:clamp(1.5rem,3vw,2.3rem);font-weight:800;margin-bottom:12px}
-.cta-band p{color:rgba(255,255,255,.8);margin-bottom:32px;font-size:1.05rem}
-.cta-band .hero-actions{justify-content:center;margin-bottom:0}
+/* ---------- Works: horizontal gallery ---------- */
+#works{background:var(--black);padding:0;color:#fff}
+.wk-head{padding:120px 0 60px}
+.wk-head .t-xl{color:#fff}
+.wk-pin{overflow:hidden}
+.wk-track{display:flex;direction:ltr;gap:34px;padding:0 6vw 120px;width:max-content}
+.wk{direction:rtl;flex:0 0 auto;width:clamp(320px,34vw,480px);position:relative}
+.wk-media{position:relative;overflow:hidden;border-radius:4px;aspect-ratio:4/4.7;background:var(--pine)}
+.wk-media img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);transition:transform 1.1s var(--ease);will-change:transform}
+.wk:hover .wk-media img{transform:scale(1.14)}
+.wk-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(8,13,11,.88))}
+.wk-tag{position:absolute;top:18px;right:18px;z-index:2;border:1px solid var(--line);background:rgba(8,13,11,.55);backdrop-filter:blur(8px);color:var(--gold-2);font-size:.72rem;font-weight:600;padding:8px 16px;border-radius:999px;letter-spacing:.05em}
+.wk-body{position:absolute;bottom:0;inset-inline:0;z-index:2;padding:28px 26px}
+.wk-body .wnum{font-family:var(--dsp);color:var(--gold);font-size:.75rem;letter-spacing:.2em;display:block;margin-bottom:10px}
+.wk-body h3{color:#fff;font-size:1.12rem;font-weight:700;margin-bottom:8px}
+.wk-body p{color:rgba(255,255,255,.68);font-size:.84rem;font-weight:300;line-height:1.75;max-height:0;opacity:0;overflow:hidden;transition:max-height .6s var(--ease),opacity .5s}
+.wk:hover .wk-body p{max-height:200px;opacity:1}
+.wk-hint{display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.4);font-size:.78rem;letter-spacing:.2em}
+.wk-hint svg{animation:nudge 1.8s var(--ease) infinite}
+@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(-8px)}}
 
-/* ===== Footer ===== */
-footer{background:var(--ink);color:rgba(255,255,255,.75);padding:60px 0 30px;margin-top:96px}
-.foot-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:34px;align-items:flex-start;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.1)}
-.foot-brand{display:flex;gap:14px;align-items:center}
-.foot-brand img{width:52px;height:52px;background:#fff;border-radius:14px;padding:5px}
-.foot-brand b{color:#fff;font-family:var(--font-display);display:block}
-.foot-brand small{color:rgba(255,255,255,.5)}
-.foot-links{display:flex;gap:22px;list-style:none;flex-wrap:wrap}
-.foot-links a{color:rgba(255,255,255,.7);font-size:.92rem;transition:color .25s}
-.foot-links a:hover{color:var(--gold)}
-.socials{display:flex;gap:12px}
-.socials a{width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#fff;transition:background .3s,transform .3s}
-.socials a:hover{background:var(--gold);color:var(--ink);transform:translateY(-3px)}
-.copy{text-align:center;padding-top:26px;font-size:.85rem;color:rgba(255,255,255,.45)}
+/* ---------- Areas ---------- */
+#areas{background:var(--pine);padding:110px 0;overflow:hidden}
+.ar-rows{display:grid;gap:18px;margin-top:60px}
+.ar-row{overflow:hidden;mask-image:linear-gradient(to left,transparent,#000 8%,#000 92%,transparent)}
+.ar-in{display:flex;gap:16px;width:max-content;direction:ltr;animation:mq 40s linear infinite}
+.ar-row.rev .ar-in{animation-direction:reverse}
+.ar-pill{direction:rtl;display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line-dark);color:rgba(255,255,255,.85);padding:15px 30px;border-radius:999px;font-family:var(--dsp);font-weight:500;font-size:.95rem;white-space:nowrap;transition:border-color .4s,background .4s}
+.ar-pill:hover{border-color:var(--gold);background:rgba(198,161,91,.08)}
+.ar-pill svg{color:var(--gold)}
 
-/* ===== Floating WhatsApp ===== */
-.fab-wa{position:fixed;bottom:26px;left:26px;z-index:99;width:60px;height:60px;border-radius:50%;background:#1FAF64;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 12px 30px rgba(31,175,100,.45);transition:transform .3s}
-.fab-wa:hover{transform:scale(1.1)}
-.fab-wa::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #1FAF64;animation:pulseRing 2.4s ease-out infinite}
+/* ---------- Testimonials ---------- */
+#voices{background:var(--paper)}
+.vc-box{max-width:860px;margin-inline:auto;text-align:center;position:relative;min-height:300px}
+.vc{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .8s var(--ease),visibility .8s}
+.vc.on{opacity:1;visibility:visible}
+.vc .q{font-family:var(--dsp);font-weight:600;font-size:clamp(1.15rem,2.4vw,1.7rem);color:var(--pine);line-height:1.8;margin-bottom:34px}
+.vc .q::before{content:"”";display:block;font-size:4.4rem;line-height:.6;color:var(--gold);margin-bottom:20px}
+.vc .who{color:var(--muted);font-size:.92rem}
+.vc .who b{display:block;font-family:var(--dsp);color:var(--pine);font-size:1rem}
+.vc-dots{display:flex;gap:10px;justify-content:center;margin-top:44px}
+.vc-dots button{width:34px;height:3px;border:0;background:#DAD6C8;cursor:pointer;transition:background .4s;border-radius:2px}
+.vc-dots button.on{background:var(--gold)}
 
-/* ===== Responsive ===== */
+/* ---------- FAQ ---------- */
+#faq{background:#fff}
+.fq{border-bottom:1px solid #E3E0D4}
+.fq:first-of-type{border-top:1px solid #E3E0D4}
+.fq button{width:100%;background:none;border:0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:30px 6px;font-family:var(--dsp);font-weight:700;font-size:1.08rem;color:var(--pine);text-align:right}
+.fq .pm{flex-shrink:0;width:34px;height:34px;border:1px solid #E3E0D4;border-radius:50%;position:relative;transition:background .4s,border-color .4s}
+.fq .pm::before,.fq .pm::after{content:"";position:absolute;top:50%;left:50%;background:var(--pine);transition:transform .4s var(--ease),background .4s}
+.fq .pm::before{width:12px;height:1.5px;transform:translate(-50%,-50%)}
+.fq .pm::after{width:1.5px;height:12px;transform:translate(-50%,-50%)}
+.fq.open .pm{background:var(--gold);border-color:var(--gold)}
+.fq.open .pm::after{transform:translate(-50%,-50%) rotate(90deg) scaleY(0)}
+.fq .ans{max-height:0;overflow:hidden;transition:max-height .55s var(--ease)}
+.fq .ans p{padding:0 6px 30px;color:var(--muted);font-weight:300;max-width:75ch}
+
+/* ---------- CTA final ---------- */
+#cta{background:var(--black);color:#fff;overflow:hidden;text-align:center;padding:150px 0}
+#cta::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(700px 420px at 50% 120%,rgba(31,143,96,.3),transparent 65%),
+  radial-gradient(600px 300px at 50% -10%,rgba(198,161,91,.14),transparent 60%)}
+#cta .wrap{position:relative}
+#cta h2{color:#fff;font-size:clamp(2rem,5vw,3.6rem);font-weight:900;margin-bottom:20px}
+#cta h2 em{font-style:normal;color:var(--gold)}
+#cta p{color:rgba(255,255,255,.65);font-weight:300;font-size:1.08rem;margin-bottom:46px}
+#cta .h-cta{justify-content:center;margin-bottom:0}
+
+/* ---------- Contact + Footer ---------- */
+#contact{background:var(--pine)}
+.ct-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line-dark);border-radius:6px;overflow:hidden;margin-bottom:26px}
+.ct{padding:44px 36px;border-inline-start:1px solid var(--line-dark);transition:background .5s}
+.ct:first-child{border-inline-start:0}
+.ct:hover{background:rgba(255,255,255,.03)}
+.ct .ic{color:var(--gold);margin-bottom:22px}
+.ct h4{color:#fff;font-size:1.02rem;margin-bottom:12px}
+.ct a{display:block;color:var(--gold-2);font-family:var(--dsp);font-weight:600;direction:ltr;text-align:right;padding:3px 0;transition:color .3s}
+.ct a:hover{color:#fff}
+.ct p{color:rgba(255,255,255,.55);font-size:.88rem;font-weight:300}
+.br-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.br{display:flex;gap:16px;align-items:flex-start;border:1px solid var(--line-dark);border-radius:6px;padding:28px 30px}
+.br svg{color:var(--gold);flex-shrink:0;margin-top:4px}
+.br h4{color:#fff;font-size:.98rem;margin-bottom:6px}
+.br p{color:rgba(255,255,255,.55);font-size:.88rem;font-weight:300}
+footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0;overflow:hidden}
+.ft-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:56px}
+.ft-brand img{width:56px;height:56px;background:#fff;border-radius:14px;padding:6px;margin-bottom:18px}
+.ft-brand b{display:block;font-family:var(--dsp);color:#fff;margin-bottom:6px}
+.ft-brand small{font-weight:300;font-size:.82rem}
+.ft-col h5{font-family:var(--dsp);color:var(--gold-2);font-size:.8rem;letter-spacing:.2em;margin-bottom:20px;font-weight:600}
+.ft-col ul{list-style:none;display:grid;gap:12px}
+.ft-col a{font-size:.9rem;font-weight:300;transition:color .3s}
+.ft-col a:hover{color:var(--gold)}
+.ft-word{font-family:var(--dsp);font-weight:900;font-size:clamp(2.6rem,9vw,7.5rem);color:rgba(255,255,255,.05);text-align:center;line-height:1.1;white-space:nowrap;letter-spacing:.02em;user-select:none}
+.ft-bar{border-top:1px solid var(--line-dark);padding:24px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.8rem;font-weight:300}
+.socs{display:flex;gap:12px}
+.socs a{width:40px;height:40px;border:1px solid var(--line-dark);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;transition:background .4s,border-color .4s,color .4s,transform .4s}
+.socs a:hover{background:var(--gold);border-color:var(--gold);color:var(--black);transform:translateY(-4px)}
+
+/* ---------- FAB ---------- */
+#fab{position:fixed;bottom:28px;left:28px;z-index:1500;width:62px;height:62px;border-radius:50%;background:#1CA85F;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 16px 40px rgba(28,168,95,.45);transition:transform .4s var(--ease)}
+#fab:hover{transform:scale(1.12) rotate(6deg)}
+#fab::before{content:"";position:absolute;inset:-4px;border-radius:50%;border:1px solid #1CA85F;animation:fabPulse 2.6s var(--ease) infinite}
+@keyframes fabPulse{0%{transform:scale(.9);opacity:.9}100%{transform:scale(1.7);opacity:0}}
+
+/* ---------- Reveal base (JS-driven) ---------- */
+[data-reveal]{opacity:0;transform:translateY(44px)}
+html.no-motion [data-reveal],html.no-motion #hero h1 .li{opacity:1!important;transform:none!important}
+
+/* ---------- Mobile ---------- */
 @media (max-width:1024px){
-  .hero-grid{grid-template-columns:1fr;gap:44px}
-  .hero-visual{min-height:340px}
-  .services-grid{grid-template-columns:repeat(2,1fr)}
-  .about-grid{grid-template-columns:1fr;gap:40px}
-  .stats{grid-template-columns:repeat(2,1fr)}
-  .contact-grid{grid-template-columns:1fr 1fr}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .st-grid{grid-template-columns:repeat(2,1fr);gap:40px 0}
+  .st:nth-child(3){border-inline-start:0}
+  .ab-grid{grid-template-columns:1fr;gap:60px}
+  .ab-media{height:480px}
+  .pr-grid{grid-template-columns:1fr 1fr;gap:50px}
+  .pr-line{display:none}
+  .wk-track{padding-bottom:80px}
+  .ct-grid{grid-template-columns:1fr}
+  .ct{border-inline-start:0;border-top:1px solid var(--line-dark)}
+  .ct:first-child{border-top:0}
 }
 @media (max-width:720px){
-  .nav-links{position:fixed;inset:0;background:rgba(12,46,33,.97);backdrop-filter:blur(16px);flex-direction:column;justify-content:center;gap:30px;transform:translateY(-100%);transition:transform .4s cubic-bezier(.22,.61,.36,1)}
-  .nav-links.open{transform:none}
-  .nav-links a{font-size:1.2rem}
-  .burger{display:block;position:relative;z-index:110}
-  .services-grid,.works-grid,.contact-grid,.branches{grid-template-columns:1fr}
-  .hero-trust{grid-template-columns:repeat(2,1fr)}
-  section{padding:70px 0}
-  .cta-band{padding:50px 24px}
-  .hero{padding-top:110px}
+  section{padding:84px 0}
+  .nav-l{position:fixed;inset:0;background:rgba(8,13,11,.97);backdrop-filter:blur(20px);flex-direction:column;justify-content:center;gap:34px;transform:translateY(-102%);transition:transform .6s var(--ease);z-index:1100}
+  .nav-l.open{transform:none}
+  .nav-l a{font-size:1.25rem}
+  #burger{display:block}
+  .h-strip{grid-template-columns:1fr 1fr}
+  .h-strip>div:nth-child(odd){border-inline-start:0}
+  .h-strip>div{border-top:1px solid var(--line-dark)}
+  .scroll-cue{display:none}
+  .svc-grid,.pr-grid,.br-grid{grid-template-columns:1fr}
+  .wk{width:82vw}
+  .hero-in{padding-top:140px}
+  .ab-seal{width:100px;height:100px;right:auto;left:-8px}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
-  .reveal,.h-anim{opacity:1;transform:none}
+  [data-reveal],#hero h1 .li{opacity:1!important;transform:none!important}
   html{scroll-behavior:auto}
 }
 </style>
 </head>
 <body>
 
-<!-- ============ NAV ============ -->
-<nav class="nav" id="nav">
-  <div class="container nav-inner">
-    <a href="#home" class="brand">
+<!-- ================= PRELOADER ================= -->
+<div id="loader">
+  <img src="https://germancontrol.net/logo.png" alt="German Pest Control">
+  <div class="ld-name">GERMAN PEST CONTROL</div>
+  <div class="ld-bar"><div class="ld-fill" id="ldFill"></div></div>
+  <div class="ld-num" id="ldNum">0%</div>
+</div>
+
+<div id="cursor"></div><div id="cursorRing"></div>
+
+<!-- ================= NAV ================= -->
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a href="#hero" class="brand">
       <img src="https://germancontrol.net/logo.png" alt="شعار الشركة الألمانية لمكافحة الحشرات">
-      <span>
-        <span class="brand-name">الشركة الألمانية لمكافحة الحشرات</span><br>
-        <span class="brand-sub">GERMAN PEST CONTROL</span>
-      </span>
+      <span><span class="bn">الشركة الألمانية لمكافحة الحشرات</span><span class="bs">GERMAN PEST CONTROL</span></span>
     </a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home">الرئيسية</a></li>
+    <ul class="nav-l" id="navL">
       <li><a href="#services">خدماتنا</a></li>
-      <li><a href="#about">من نحن</a></li>
-      <li><a href="#areas">مناطق الخدمة</a></li>
+      <li><a href="#about">لماذا نحن</a></li>
       <li><a href="#works">سابقة الأعمال</a></li>
+      <li><a href="#areas">مناطق الخدمة</a></li>
+      <li><a href="#faq">الأسئلة الشائعة</a></li>
       <li><a href="#contact">تواصل معنا</a></li>
-      <li><a class="nav-cta" href="tel:+201015335554">اتصل الآن</a></li>
+      <li><a class="ncta" href="tel:+201015335554"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.2a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg><span>01015335554</span></a></li>
     </ul>
-    <button class="burger" id="burger" aria-label="القائمة"><span></span><span></span><span></span></button>
+    <button id="burger" aria-label="القائمة"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<!-- ============ HERO ============ -->
-<header class="hero" id="home">
-  <div class="container hero-grid">
-    <div>
-      <div class="badge-license h-anim d1">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4v6c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-4z"/><path d="M9 12l2 2 4-4"/></svg>
-        الشركة الوحيدة المرخصة والموثقة من وزارة الصحة المصرية
-      </div>
-      <h1 class="h-anim d2">حماية احترافية لمنزلك من <em>الحشرات والقوارض</em></h1>
-      <p class="lead h-anim d3">هنخلصك من الحشرات والقوارض بسهولة وأمان باستخدام مواد مصرّح بها، مع ضمان ومتابعة دورية بدون مغادرة المنزل. جودة ألمانية وفريق محترف وحماية تدوم.</p>
-      <div class="hero-actions h-anim d4">
-        <a class="btn btn-gold" href="tel:+201015335554">
-          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.2a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
-          01015335554
-        </a>
-        <a class="btn btn-wa" href="https://wa.me/201015335554">
-          <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5.2.6.8 2 .9 2.1.1.2.1.3 0 .5-.1.2-.2.4-.3.5l-.5.6c-.2.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.7-.2.3.1 1.8.9 2.1 1 .3.2.5.3.6.4.1.2.1.7-.2 1.1z"/></svg>
-          واتساب
-        </a>
-        <a class="btn btn-ghost" href="#services">تعرّف على خدماتنا</a>
-      </div>
-      <div class="hero-trust h-anim d5">
-        <div class="chip"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4v6c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-4z"/></svg>أمان على الأسرة والحيوانات</div>
-        <div class="chip"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21c6 0 12-5 12-13V3h-5C6 3 3 9 3 14c0 3 1 5 3 7z"/><path d="M6 21c0-6 4-10 9-12"/></svg>مواد معتمدة وصديقة للبيئة</div>
-        <div class="chip"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>إبادة شاملة وفعّالة</div>
-        <div class="chip"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>خدمة عملاء 24 ساعة</div>
-      </div>
+<!-- ================= HERO ================= -->
+<header id="hero">
+  <div class="hero-bg"><img id="heroImg" src="https://germancontrol.net/work4.jpg" alt="فيلا فاخرة محمية بواسطة الشركة الألمانية لمكافحة الحشرات"></div>
+  <div class="scroll-cue">SCROLL</div>
+  <div class="hero-in wrap">
+    <div class="h-badge" data-hero>
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4v6c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-4z"/><path d="M9 12l2 2 4-4"/></svg>
+      الشركة الوحيدة المرخصة والموثقة من وزارة الصحة المصرية
     </div>
-    <div class="hero-visual h-anim d3">
-      <div class="ring r1"></div>
-      <div class="ring r2"></div>
-      <div class="ring r3"></div>
-      <div class="shield-core">
-        <img src="https://germancontrol.net/logo.png" alt="German Pest Control">
-        <span>GERMAN QUALITY</span>
-      </div>
-      <div class="orbit-tag tag-1"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>ضمان حتى 3 سنوات</div>
-      <div class="orbit-tag tag-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>معاينة مجانية</div>
-      <div class="orbit-tag tag-3"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>+5,600 عميل</div>
+    <h1>
+      <span class="l"><span class="li">منزلك يستحق حماية</span></span>
+      <span class="l"><span class="li">بمعايير <em>ألمانية</em></span></span>
+    </h1>
+    <p class="h-sub" data-hero>حلول مكافحة آفات Premium للفلل والقصور والكمبوندات — مواد مصرّح بها آمنة تماماً على الأسرة والحيوانات الأليفة، فريق يعمل بسرية واحترافية كاملة، وضمان مكتوب يصل إلى 3 سنوات.</p>
+    <div class="h-cta" data-hero>
+      <a class="btn b-gold" data-mag href="tel:+201015335554"><span class="bg"></span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.2a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg><span>احجز معاينة مجانية</span></a>
+      <a class="btn b-wa" data-mag href="https://wa.me/201015335554"><span class="bg"></span><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5.2.6.8 2 .9 2.1.1.2.1.3 0 .5-.1.2-.2.4-.3.5l-.5.6c-.2.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.7-.2.3.1 1.8.9 2.1 1 .3.2.5.3.6.4.1.2.1.7-.2 1.1z"/></svg><span>واتساب مباشر</span></a>
+      <a class="btn b-line" data-mag href="#works"><span class="bg"></span><span>شاهد أعمالنا</span></a>
+    </div>
+    <div class="h-strip" data-hero>
+      <div><b><span class="count" data-target="5600">0</span>+</b><small>عميل يثق بنا</small></div>
+      <div><b><span class="count" data-target="3">0</span> سنوات</b><small>ضمان مكتوب</small></div>
+      <div><b>24/7</b><small>خدمة على مدار الساعة</small></div>
+      <div><b><span class="count" data-target="100">0</span>%</b><small>مواد آمنة مرخصة</small></div>
     </div>
   </div>
 </header>
 
-<!-- ============ SERVICES ============ -->
+<!-- ================= TRUST MARQUEE ================= -->
+<div id="trust">
+  <div class="tm-wrap"><div class="tm" id="tmTrack"></div></div>
+</div>
+
+<!-- ================= SERVICES ================= -->
 <section id="services">
-  <div class="container">
-    <div class="sec-head reveal">
-      <span class="eyebrow">German Quality</span>
-      <h2 class="sec-title">خدماتنا في مكافحة الآفات</h2>
-      <p class="sec-sub">نقدم حلول Pest Control Premium للفلل والمنازل الراقية والكمبوندات بأحدث التقنيات الألمانية.</p>
+  <div class="wrap">
+    <div class="head" data-reveal>
+      <div class="eyeb">GERMAN QUALITY</div>
+      <h2 class="t-xl">خدمات بمستوى يليق بمنزلك</h2>
+      <p class="t-sub">لا نقدم "رشّاً" تقليدياً — بل بروتوكولات معالجة متكاملة تبدأ بمعاينة دقيقة وتنتهي بمتابعة دورية موثّقة.</p>
     </div>
-    <div class="services-grid">
-      <div class="svc reveal">
-        <div class="svc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="13" rx="5" ry="7"/><path d="M12 6V3M8 8L5 5M16 8l3-3M7 13H3M17 13h4M8 18l-3 3M16 18l3 3"/></svg></div>
+    <div class="svc-grid">
+      <div class="svc" data-reveal>
+        <span class="num">01</span>
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="13" rx="5" ry="7"/><path d="M12 6V3M8 8L5 5M16 8l3-3M7 13H3M17 13h4M8 18l-3 3M16 18l3 3"/></svg>
         <h3>مكافحة الصراصير</h3>
-        <p>القضاء التام على الصراصير بأنواعها باستخدام مواد آمنة وفعّالة مع ضمان عدم عودتها.</p>
+        <p>القضاء التام على الصراصير بأنواعها بطُعوم جِل ألمانية آمنة داخل المطابخ، مع ضمان عدم عودتها.</p>
       </div>
-      <div class="svc reveal" data-delay="1">
-        <div class="svc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-5h6v5"/></svg></div>
+      <div class="svc" data-reveal>
+        <span class="num">02</span>
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-5h6v5"/></svg>
         <h3>مكافحة النمل الأبيض</h3>
-        <p>حماية منزلك من أخطر الآفات التي تسبب خسائر فعلية قبل اكتشافها، بأنظمة حقن متطورة.</p>
+        <p>حماية أساسات وأخشاب منزلك من أخطر آفة صامتة، بأنظمة حقن وحواجز كيميائية متطورة.</p>
       </div>
-      <div class="svc reveal" data-delay="2">
-        <div class="svc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a6 6 0 0 1 12 0v3a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-3z"/><circle cx="8" cy="13" r="1" fill="currentColor"/><path d="M16 14c2 0 4 1 5 3"/><path d="M10 8V6"/></svg></div>
-        <h3>مكافحة القوارض والفئران</h3>
-        <p>حلول متكاملة للتخلص من الفئران والقوارض وإغلاق منافذ دخولها نهائياً.</p>
+      <div class="svc" data-reveal>
+        <span class="num">03</span>
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a6 6 0 0 1 12 0v3a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-3z"/><circle cx="8" cy="13" r="1" fill="currentColor"/><path d="M16 14c2 0 4 1 5 3"/><path d="M10 8V6"/></svg>
+        <h3>مكافحة القوارض</h3>
+        <p>خطة متكاملة: مصائد ومحطات طُعم مؤمَّنة، وإغلاق هندسي لمنافذ الدخول نهائياً.</p>
       </div>
-      <div class="svc reveal">
-        <div class="svc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16"/><path d="M12 8c-3-4-8-3-9 0 3 2 6 2 9 0z"/><path d="M12 8c3-4 8-3 9 0-3 2-6 2-9 0z"/><path d="M9 20h6"/></svg></div>
+      <div class="svc" data-reveal>
+        <span class="num">04</span>
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16"/><path d="M12 8c-3-4-8-3-9 0 3 2 6 2 9 0z"/><path d="M12 8c3-4 8-3 9 0-3 2-6 2-9 0z"/><path d="M9 20h6"/></svg>
         <h3>مكافحة الناموس والذباب</h3>
-        <p>رش وتعقيم يمنع تكاثر الناموس والذباب ويحمي عائلتك من الأمراض.</p>
+        <p>معالجة الحدائق والمسطحات المائية ومحيط المسابح بمواد آمنة على النباتات والمياه.</p>
       </div>
-      <div class="svc reveal" data-delay="1">
-        <div class="svc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6"/><path d="M3 18h18"/><path d="M5 10V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3"/><path d="M4 18v2M20 18v2"/></svg></div>
-        <h3>مكافحة بق الفراش والعناكب</h3>
-        <p>معالجة متخصصة لبق الفراش تضمن راحتك ونومك بأمان تام.</p>
+      <div class="svc" data-reveal>
+        <span class="num">05</span>
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6"/><path d="M3 18h18"/><path d="M5 10V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3"/><path d="M4 18v2M20 18v2"/></svg>
+        <h3>مكافحة بق الفراش</h3>
+        <p>بروتوكول علاج مكثّف لغرف النوم والمفروشات على جلسات موثّقة — نوم هادئ وآمن.</p>
       </div>
-      <div class="svc reveal" data-delay="2">
-        <div class="svc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"/><path d="M16 9h3a1 1 0 0 1 1 1v11"/><path d="M2 21h20"/><path d="M8 7h2M8 11h2M8 15h2M12 7h1M12 11h1M12 15h1"/></svg></div>
+      <div class="svc" data-reveal>
+        <span class="num">06</span>
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"/><path d="M16 9h3a1 1 0 0 1 1 1v11"/><path d="M2 21h20"/><path d="M8 7h2M8 11h2M8 15h2M12 7h1M12 11h1M12 15h1"/></svg>
         <h3>عقود سنوية للشركات</h3>
-        <p>برامج متابعة دورية للشركات والمطاعم والكمبوندات بضمان يصل إلى 3 سنوات.</p>
+        <p>برامج IPM دورية للفنادق والمطاعم والكمبوندات بتقارير زيارات وضمان حتى 3 سنوات.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ ABOUT ============ -->
+<!-- ================= STATS ================= -->
+<section id="stats">
+  <div class="wrap st-grid">
+    <div class="st" data-reveal><b><span class="count" data-target="5600">0</span><span class="g">+</span></b><span>عميل من الفلل والكمبوندات يثق بنا</span></div>
+    <div class="st" data-reveal><b><span class="count" data-target="3">0</span></b><span>سنوات ضمان مكتوب على المعالجة</span></div>
+    <div class="st" data-reveal><b><span class="count" data-target="24">0</span><span class="g">/7</span></b><span>فريق جاهز على مدار الساعة</span></div>
+    <div class="st" data-reveal><b><span class="count" data-target="2">0</span></b><span>فرع — القاهرة والإسكندرية</span></div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
 <section id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-card reveal">
-        <img src="https://germancontrol.net/logo.png" alt="الشركة الألمانية لمكافحة الحشرات">
-        <h3>الشركة الألمانية لمكافحة الحشرات</h3>
-        <p>German Pest Control — Premium pest management solutions. جودة ألمانية، ترخيص رسمي، وفريق مدرّب على أعلى مستوى لخدمة أرقى المنازل والكمبوندات.</p>
-      </div>
-      <div>
-        <div class="reveal">
-          <span class="eyebrow">من نحن</span>
-          <h2 class="sec-title">حماية احترافية تليق بمنزلك</h2>
-          <p class="sec-sub">المنزل الراقي لا يحتاج فقط إلى النظافة الظاهرة، بل إلى حماية احترافية تحافظ على جودة الحياة داخله. نقدم خدماتنا بسرية واحترافية كاملة، باستخدام مواد مصرّح بها وآمنة تماماً على الأسرة والأطفال والحيوانات الأليفة.</p>
-        </div>
-        <ul class="check-list">
-          <li class="reveal"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>سرية واحترافية كاملة في العمل</li>
-          <li class="reveal" data-delay="1"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>ضمان يصل إلى 3 سنوات</li>
-          <li class="reveal" data-delay="2"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>فريق محترف مدرّب على أعلى مستوى</li>
-          <li class="reveal" data-delay="3"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>متابعة دورية بعد التنفيذ</li>
-        </ul>
-        <a class="btn btn-gold reveal" href="https://wa.me/201015335554">اطلب معاينة مجانية</a>
+  <div class="wrap ab-grid">
+    <div class="ab-media" data-reveal>
+      <div class="ab-img ab-1"><img data-plx="-12" src="https://germancontrol.net/work6.jpg" alt="فريق الشركة الألمانية أثناء معالجة فيلا"></div>
+      <div class="ab-img ab-2"><img data-plx="-7" src="https://germancontrol.net/work8.jpg" alt="تعقيم مدخل فيلا فاخرة"></div>
+      <div class="ab-seal">
+        <svg viewBox="0 0 128 128" width="128" height="128"><defs><path id="cir" d="M64 14a50 50 0 1 1 0 100 50 50 0 1 1 0-100"/></defs><text font-family="Alexandria,sans-serif" font-size="11.5" letter-spacing="3.5" fill="#C6A15B"><textPath href="#cir">GERMAN QUALITY • LICENSED • SINCE DAY ONE • </textPath></text></svg>
+        <div class="core"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4v6c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
       </div>
     </div>
-    <div class="stats">
-      <div class="stat reveal"><b><span class="count" data-target="5600">0</span><span class="u">+</span></b><span>عميل يثق بنا</span></div>
-      <div class="stat reveal" data-delay="1"><b><span class="count" data-target="3">0</span></b><span>سنوات ضمان</span></div>
-      <div class="stat reveal" data-delay="2"><b>24/7</b><span>خدمة عملاء</span></div>
-      <div class="stat reveal" data-delay="3"><b><span class="count" data-target="100">0</span><span class="u">%</span></b><span>مواد آمنة مرخصة</span></div>
+    <div>
+      <div data-reveal>
+        <div class="eyeb">لماذا نحن</div>
+        <h2 class="t-xl">المنزل الراقي لا يقبل أنصاف الحلول</h2>
+        <p class="t-sub">النظافة الظاهرة لا تكفي — الحماية الحقيقية تحتاج بروتوكولاً احترافياً يحافظ على جودة الحياة داخل منزلك دون أن يشعر به أحد.</p>
+      </div>
+      <ul class="chk">
+        <li data-reveal><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg><div>ترخيص وتوثيق رسمي<small>الشركة الوحيدة المرخصة والموثقة من وزارة الصحة المصرية</small></div></li>
+        <li data-reveal><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg><div>سرية تامة واحترافية كاملة<small>فريق مدرّب يعمل بهدوء ودون إزعاج — سيارات ومعدات غير لافتة عند الطلب</small></div></li>
+        <li data-reveal><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg><div>مواد ألمانية مصرّح بها<small>آمنة تماماً على الأطفال والحيوانات الأليفة والنباتات</small></div></li>
+        <li data-reveal><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg><div>ضمان مكتوب حتى 3 سنوات<small>مع زيارات متابعة دورية موثّقة بعد التنفيذ</small></div></li>
+      </ul>
+      <a class="btn b-gold" data-mag data-reveal href="https://wa.me/201015335554"><span class="bg"></span><span>اطلب معاينة مجانية الآن</span></a>
     </div>
   </div>
 </section>
 
-<!-- ============ AREAS ============ -->
-<section id="areas">
-  <div class="container reveal">
-    <span class="eyebrow">Premium Protection</span>
-    <h2 class="sec-title">مناطق الخدمة</h2>
-    <p class="sec-sub">نخدم أرقى المناطق والكمبوندات في القاهرة والإسكندرية والساحل الشمالي.</p>
-  </div>
-  <div class="marquee-wrap reveal">
-    <div class="marquee" id="marquee">
-      <!-- pills duplicated by JS for seamless loop -->
+<!-- ================= PROCESS ================= -->
+<section id="process">
+  <div class="wrap">
+    <div class="head" data-reveal>
+      <div class="eyeb">آلية العمل</div>
+      <h2 class="t-xl">من أول اتصال إلى منزل محميّ</h2>
+      <p class="t-sub">منهجية ألمانية واضحة — تعرف بالضبط ماذا سيحدث، ومتى، وبأي مواد.</p>
+    </div>
+    <div class="pr-grid">
+      <div class="pr-line"><div class="pr-fill" id="prFill"></div></div>
+      <div class="pr" data-reveal><div class="dot">1</div><h3>معاينة مجانية</h3><p>زيارة فنّي متخصص لتحديد نوع الآفة وبؤر التكاثر ونقاط الدخول — دون أي التزام.</p></div>
+      <div class="pr" data-reveal><div class="dot">2</div><h3>خطة معالجة مخصصة</h3><p>بروتوكول مصمم لمنزلك تحديداً، مع توضيح المواد المستخدمة وشهادات ترخيصها.</p></div>
+      <div class="pr" data-reveal><div class="dot">3</div><h3>تنفيذ احترافي</h3><p>فريق بمعدات حماية كاملة ينفّذ المعالجة بدقة وسرية — دون مغادرتك للمنزل.</p></div>
+      <div class="pr" data-reveal><div class="dot">4</div><h3>ضمان ومتابعة</h3><p>ضمان مكتوب حتى 3 سنوات وزيارات متابعة دورية للتأكد من النتيجة.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ============ WORKS ============ -->
+<!-- ================= WORKS (horizontal) ================= -->
 <section id="works">
-  <div class="container">
-    <div class="sec-head center reveal">
-      <span class="eyebrow">Our Work</span>
-      <h2 class="sec-title">سابقة الأعمال</h2>
-      <p class="sec-sub">نماذج من أعمالنا في مكافحة الحشرات والقوارض للفلل والمنازل والشركات بأعلى معايير الجودة.</p>
+  <div class="wrap wk-head">
+    <div data-reveal>
+      <div class="eyeb">OUR WORK</div>
+      <h2 class="t-xl">سابقة أعمال تتحدث عنا</h2>
     </div>
-    <div class="works-grid">
-      <article class="work reveal">
-        <div class="work-media"><img loading="lazy" src="https://germancontrol.net/work1.jpg" alt="مكافحة حشرات - رش وتعقيم حديقة فيلا بالتجمع"><span class="work-tag">فيلا بالتجمع الخامس</span></div>
-        <div class="work-body"><h3>مكافحة حشرة البق – فيلا بالتجمع الخامس</h3><p>فيلا فاخرة كانت تعاني من انتشار البق في غرف النوم والمفروشات. بعد معاينة كاملة وتحديد بؤر التكاثر، نفّذنا بروتوكول علاج مكثّف بمواد ألمانية آمنة على الأطفال والحيوانات، وبعد جلستين متابعة تم القضاء التام على البق مع ضمان 3 سنوات.</p></div>
-      </article>
-      <article class="work reveal" data-delay="1">
-        <div class="work-media"><img loading="lazy" src="https://germancontrol.net/work2.jpg" alt="مكافحة حشرات - رش وتعقيم مطبخ منزل"><span class="work-tag">شقة بمدينة نصر</span></div>
-        <div class="work-body"><h3>تعقيم المطبخ ومكافحة الصراصير – شقة سكنية</h3><p>رش دقيق وتعقيم شامل للمطبخ والدواليب والفواصل بين الوحدات، مع سدّ منافذ الدخول ووضع طُعوم جل آمنة. اختفت الصراصير تماماً خلال أيام قليلة وأصبح المطبخ نظيفاً وآمناً للطعام.</p></div>
-      </article>
-      <article class="work reveal">
-        <div class="work-media"><img loading="lazy" src="https://germancontrol.net/work3.jpg" alt="عميلة راضية عن خدمة مكافحة الحشرات"><span class="work-tag">ضمان 3 سنوات</span></div>
-        <div class="work-body"><h3>عملاء راضون وضمان يمتد لسنوات</h3><p>أهم ما نفخر به هو ثقة عملائنا؛ الكثير منهم رشّحونا لأصدقائهم وعائلاتهم بعد ما لمسوا الفرق في الجودة والالتزام. نقدّم لكل عميل ضماناً يصل إلى 3 سنوات مع زيارات متابعة دورية.</p></div>
-      </article>
-      <article class="work reveal" data-delay="1">
-        <div class="work-media"><img loading="lazy" src="https://germancontrol.net/work4.jpg" alt="مكافحة حشرات - فيلا بحمام سباحة وحديقة"><span class="work-tag">فيلا بحمام سباحة</span></div>
-        <div class="work-body"><h3>رش شامل لفيلا بحديقة وحمام سباحة</h3><p>معالجة الناموس والذباب والحشرات الطائرة حول المسطحات المائية والمساحات الخضراء، برش شامل للحديقة والأسوار ومحيط المسبح بمواد آمنة على النباتات ومياه حمام السباحة.</p></div>
-      </article>
-      <article class="work reveal">
-        <div class="work-media"><img loading="lazy" src="https://germancontrol.net/work5.jpg" alt="مكافحة حشرات - رش بتقنيات حديثة لحديقة فيلا"><span class="work-tag">تقنيات رش حديثة</span></div>
-        <div class="work-body"><h3>مكافحة الحشرات الطائرة بتقنيات حديثة</h3><p>أحدث تقنيات الرش المتطوّرة التي تصل إلى أدق الفراغات بين الأوراق والفروع لتغطية شاملة للمساحات الخضراء، مع الحفاظ التام على سلامة النباتات وحماية المدخل والحديقة.</p></div>
-      </article>
-      <article class="work reveal" data-delay="1">
-        <div class="work-media"><img loading="lazy" src="https://germancontrol.net/work6.jpg" alt="فريق مكافحة الحشرات أثناء رش أسوار وحديقة فيلا"><span class="work-tag">فريق عمل محترف</span></div>
-        <div class="work-body"><h3>فريق متخصص لتغطية المساحات الكبيرة</h3><p>فريق منظّم من فنيين مدرّبين يعمل بتناغم لتغطية الفلل الواسعة في وقت قياسي، بأجهزة احترافية ومعدات وقاية كاملة، من الخارج والداخل، لبيئة صحية وآمنة للعائلة.</p></div>
-      </article>
-      <article class="work reveal">
-        <div class="work-media"><img loading="lazy" src="https://germancontrol.net/work7.jpg" alt="فني مكافحة حشرات يرش أسفل الأسوار والحدائق"><span class="work-tag">مكافحة النمل والزواحف</span></div>
-        <div class="work-body"><h3>حماية الأسوار والمداخل من الزواحف</h3><p>رش دقيق ومركّز لأسفل الأسوار والفواصل والشقوق التي تختبئ بها الحشرات الزاحفة، مع معدات حماية كاملة. تم التخلّص من النمل والزواحف نهائياً وأصبحت المداخل آمنة للأطفال.</p></div>
-      </article>
-      <article class="work reveal" data-delay="1">
-        <div class="work-media"><img loading="lazy" src="https://germancontrol.net/work8.jpg" alt="فني مكافحة حشرات يعقّم مدخل وباب فيلا"><span class="work-tag">تعقيم المداخل والأبواب</span></div>
-        <div class="work-body"><h3>تعقيم المداخل وحماية أبواب المنزل</h3><p>معالجة وقائية شاملة للمدخل والأركان والزوايا الحجرية بمواد فعّالة وطويلة المفعول، لمنع دخول الحشرات الزاحفة من أسفل الأبواب ومنزل خالٍ من الحشرات طوال العام.</p></div>
-      </article>
+    <div class="wk-hint" data-reveal>اسكرول لاستعراض الأعمال<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div>
+  </div>
+  <div class="wk-pin" id="wkPin">
+    <div class="wk-track" id="wkTrack">
+      <article class="wk"><div class="wk-media"><img loading="lazy" src="https://germancontrol.net/work1.jpg" alt="مكافحة بق الفراش في فيلا بالتجمع الخامس"><span class="wk-tag">التجمع الخامس</span><div class="wk-body"><span class="wnum">01</span><h3>مكافحة بق الفراش — فيلا فاخرة</h3><p>بروتوكول علاج مكثّف لغرف النوم والمفروشات بمواد ألمانية آمنة، وبعد جلستي متابعة تم القضاء التام مع ضمان 3 سنوات.</p></div></div></article>
+      <article class="wk"><div class="wk-media"><img loading="lazy" src="https://germancontrol.net/work2.jpg" alt="تعقيم مطبخ ومكافحة الصراصير"><span class="wk-tag">مدينة نصر</span><div class="wk-body"><span class="wnum">02</span><h3>تعقيم المطبخ ومكافحة الصراصير</h3><p>رش دقيق وطُعوم جل آمنة داخل الدواليب والفواصل مع سدّ منافذ الدخول — اختفاء تام خلال أيام.</p></div></div></article>
+      <article class="wk"><div class="wk-media"><img loading="lazy" src="https://germancontrol.net/work4.jpg" alt="رش شامل لفيلا بحمام سباحة"><span class="wk-tag">فيلا بحمام سباحة</span><div class="wk-body"><span class="wnum">03</span><h3>معالجة محيط المسبح والحديقة</h3><p>مكافحة الناموس والحشرات الطائرة حول المسطحات المائية بمواد آمنة على النباتات ومياه السباحة.</p></div></div></article>
+      <article class="wk"><div class="wk-media"><img loading="lazy" src="https://germancontrol.net/work5.jpg" alt="تقنيات رش حديثة لحديقة فيلا"><span class="wk-tag">تقنيات حديثة</span><div class="wk-body"><span class="wnum">04</span><h3>رش المساحات الخضراء بتقنيات متطورة</h3><p>أجهزة رش تصل لأدق الفراغات بين الأوراق لتغطية شاملة مع الحفاظ التام على سلامة النباتات.</p></div></div></article>
+      <article class="wk"><div class="wk-media"><img loading="lazy" src="https://germancontrol.net/work6.jpg" alt="فريق محترف يغطي فيلا واسعة"><span class="wk-tag">فريق متكامل</span><div class="wk-body"><span class="wnum">05</span><h3>تغطية فيلا واسعة في وقت قياسي</h3><p>فريق منظّم بمعدات احترافية ووقاية كاملة يعالج الداخل والخارج بتناغم — بيئة صحية للعائلة.</p></div></div></article>
+      <article class="wk"><div class="wk-media"><img loading="lazy" src="https://germancontrol.net/work7.jpg" alt="حماية الأسوار من الزواحف"><span class="wk-tag">مكافحة الزواحف</span><div class="wk-body"><span class="wnum">06</span><h3>حماية الأسوار والمداخل</h3><p>معالجة مركّزة للشقوق والفواصل أسفل الأسوار — تخلّص نهائي من النمل والزواحف ومداخل آمنة للأطفال.</p></div></div></article>
+      <article class="wk"><div class="wk-media"><img loading="lazy" src="https://germancontrol.net/work8.jpg" alt="تعقيم مدخل وباب فيلا"><span class="wk-tag">حماية وقائية</span><div class="wk-body"><span class="wnum">07</span><h3>تعقيم المداخل والأبواب</h3><p>معالجة وقائية طويلة المفعول للأركان والزوايا الحجرية تمنع دخول الزواحف طوال العام.</p></div></div></article>
+      <article class="wk"><div class="wk-media"><img loading="lazy" src="https://germancontrol.net/work3.jpg" alt="عميلة راضية عن الخدمة"><span class="wk-tag">ضمان 3 سنوات</span><div class="wk-body"><span class="wnum">08</span><h3>عملاء يرشّحوننا لعائلاتهم</h3><p>أغلب عملائنا الجدد يأتون بترشيح من عملاء حاليين — هذه هي شهادتنا الحقيقية.</p></div></div></article>
     </div>
   </div>
 </section>
 
-<!-- ============ CONTACT ============ -->
-<section id="contact">
-  <div class="container">
-    <div class="sec-head center reveal">
-      <span class="eyebrow">تواصل معنا</span>
-      <h2 class="sec-title">احجز خدمتك الآن</h2>
-      <p class="sec-sub">فريقنا جاهز لخدمتك على مدار الساعة. تواصل معنا عبر أي وسيلة تناسبك.</p>
+<!-- ================= AREAS ================= -->
+<section id="areas">
+  <div class="wrap" data-reveal>
+    <div class="eyeb">PREMIUM COVERAGE</div>
+    <h2 class="t-xl" style="color:#fff">نخدم أرقى المناطق والكمبوندات</h2>
+    <p class="t-sub">القاهرة الكبرى، الإسكندرية، والساحل الشمالي — أينما كان منزلك، فريقنا أقرب مما تتخيل.</p>
+  </div>
+  <div class="ar-rows">
+    <div class="ar-row" data-reveal><div class="ar-in" data-areas="1"></div></div>
+    <div class="ar-row rev" data-reveal><div class="ar-in" data-areas="2"></div></div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section id="voices">
+  <div class="wrap">
+    <div class="head" style="text-align:center" data-reveal>
+      <div class="eyeb" style="justify-content:center">ماذا يقول عملاؤنا</div>
+      <h2 class="t-xl">ثقة تتوارثها العائلات</h2>
     </div>
-    <div class="contact-grid">
-      <div class="c-card reveal">
-        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.2a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg></div>
+    <div class="vc-box" data-reveal>
+      <div class="vc on"><p class="q">فريق محترم جداً وملتزم بالمواعيد بالدقيقة. اشتغلوا في الفيلا كلها من غير ما نحس بأي إزعاج، ومن ساعتها ولا حشرة واحدة. الضمان المكتوب فرق معايا كتير.</p><div class="who"><b>أ. محمد ع.</b>فيلا — التجمع الخامس</div></div>
+      <div class="vc"><p class="q">جربت شركات كتير قبلهم ومفيش نتيجة تدوم. الفرق هنا في المعاينة نفسها — حددوا مصدر المشكلة بالظبط وعالجوها من جذورها. سنتين دلوقتي والبيت نظيف تماماً.</p><div class="who"><b>م. سارة ح.</b>شقة — مدينة نصر</div></div>
+      <div class="vc"><p class="q">عندنا عقد سنوي معاهم للكمبوند كله. تقارير زيارات منتظمة، فريق ثابت يعرف المكان، واستجابة فورية لأي بلاغ. تعامل شركات حقيقي.</p><div class="who"><b>م. أحمد ر.</b>إدارة كمبوند — الشيخ زايد</div></div>
+      <div class="vc-dots" id="vcDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="wrap" style="max-width:880px">
+    <div class="head" data-reveal>
+      <div class="eyeb">الأسئلة الشائعة</div>
+      <h2 class="t-xl">كل ما تريد معرفته</h2>
+    </div>
+    <div class="fq" data-reveal><button>هل المواد المستخدمة آمنة على الأطفال والحيوانات الأليفة؟<span class="pm"></span></button><div class="ans"><p>نعم تماماً. نستخدم مواد ألمانية مصرّح بها من وزارة الصحة المصرية، آمنة على الأطفال والحيوانات الأليفة والنباتات، وبدون روائح نفّاذة في معظم البروتوكولات.</p></div></div>
+    <div class="fq" data-reveal><button>هل نحتاج لمغادرة المنزل أثناء المعالجة؟<span class="pm"></span></button><div class="ans"><p>في الغالبية العظمى من الحالات لا — بروتوكولاتنا مصممة للتنفيذ دون مغادرة المنزل. في حالات نادرة جداً قد ننصح بإخلاء غرفة محددة لساعات قليلة، ونخبرك بذلك مسبقاً في المعاينة.</p></div></div>
+    <div class="fq" data-reveal><button>ما الذي يشمله الضمان؟<span class="pm"></span></button><div class="ans"><p>ضمان مكتوب يصل إلى 3 سنوات حسب نوع المعالجة، يشمل زيارات متابعة دورية وإعادة المعالجة مجاناً في حال ظهور أي نشاط للآفة خلال فترة الضمان.</p></div></div>
+    <div class="fq" data-reveal><button>هل تقدمون عقوداً سنوية للشركات والكمبوندات؟<span class="pm"></span></button><div class="ans"><p>نعم — برامج مكافحة متكاملة (IPM) بزيارات مجدولة وتقارير موثّقة لكل زيارة، مصممة للفنادق والمطاعم والمدارس والكمبوندات، مع فريق ثابت واستجابة فورية للبلاغات.</p></div></div>
+    <div class="fq" data-reveal><button>كم تستغرق المعاينة وهل هي مجانية؟<span class="pm"></span></button><div class="ans"><p>المعاينة مجانية بالكامل ودون أي التزام، وتستغرق عادة من 20 إلى 40 دقيقة يحدد خلالها الفني نوع الآفة وخطة المعالجة والتكلفة النهائية.</p></div></div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section id="cta">
+  <div class="wrap" data-reveal>
+    <h2>حماية تدوم..<br><em>وراحة بال تدوم أكثر</em></h2>
+    <p>معاينة مجانية اليوم — وضمان مكتوب حتى 3 سنوات</p>
+    <div class="h-cta">
+      <a class="btn b-gold" data-mag href="tel:+201015335554"><span class="bg"></span><span>اتصل الآن — 01015335554</span></a>
+      <a class="btn b-wa" data-mag href="https://wa.me/201015335554"><span class="bg"></span><span>احجز عبر واتساب</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="head" data-reveal>
+      <div class="eyeb">تواصل معنا</div>
+      <h2 class="t-xl" style="color:#fff">فريقنا في خدمتك على مدار الساعة</h2>
+    </div>
+    <div class="ct-grid" data-reveal>
+      <div class="ct">
+        <svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.2a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
         <h4>اتصل بنا</h4>
         <a href="tel:+201015335554">01015335554</a>
         <a href="tel:+201000827478">01000827478</a>
         <a href="tel:+201122110206">01122110206</a>
       </div>
-      <div class="c-card reveal" data-delay="1">
-        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.6A8.5 8.5 0 1 1 21 11.5z"/></svg></div>
+      <div class="ct">
+        <svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.6A8.5 8.5 0 1 1 21 11.5z"/></svg>
         <h4>واتساب</h4>
-        <p>ردّ سريع على استفساراتك وحجز المعاينة</p>
-        <a href="https://wa.me/201015335554" style="direction:rtl">راسلنا مباشرة على واتساب</a>
+        <p>ردّ سريع على استفسارك وحجز موعد المعاينة</p>
+        <a href="https://wa.me/201015335554" style="direction:rtl">ابدأ المحادثة الآن ←</a>
       </div>
-      <div class="c-card reveal" data-delay="2">
-        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+      <div class="ct">
+        <svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
         <h4>مواعيد العمل</h4>
-        <p>مفتوح دائماً — 24 ساعة، طوال أيام الأسبوع</p>
+        <p>مفتوح دائماً — 24 ساعة طوال أيام الأسبوع، بما فيها العطلات الرسمية</p>
       </div>
     </div>
-    <div class="branches">
-      <div class="branch reveal">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <div><h4>فرع القاهرة</h4><p>مدينة نصر — ٥٢ شارع الطيران أمام مستشفى مدينة نصر التخصصي</p></div>
-      </div>
-      <div class="branch reveal" data-delay="1">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <div><h4>فرع الإسكندرية</h4><p>كامب شيزار على الترام — فوق بنك القاهرة</p></div>
-      </div>
+    <div class="br-grid">
+      <div class="br" data-reveal><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><div><h4>فرع القاهرة</h4><p>مدينة نصر — ٥٢ شارع الطيران، أمام مستشفى مدينة نصر التخصصي</p></div></div>
+      <div class="br" data-reveal><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><div><h4>فرع الإسكندرية</h4><p>كامب شيزار على الترام — فوق بنك القاهرة</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ CTA BAND ============ -->
-<div class="container reveal">
-  <div class="cta-band">
-    <h2>حماية تدوم.. راحة تدوم أكثر</h2>
-    <p>اطلب زيارة معاينة مجانية اليوم واحصل على ضمان يصل إلى 3 سنوات</p>
-    <div class="hero-actions">
-      <a class="btn btn-gold" href="tel:+201015335554">اتصل الآن للحجز</a>
-      <a class="btn btn-wa" href="https://wa.me/201015335554">تواصل عبر واتساب</a>
-    </div>
-  </div>
-</div>
-
-<!-- ============ FOOTER ============ -->
+<!-- ================= FOOTER ================= -->
 <footer>
-  <div class="container">
-    <div class="foot-grid">
-      <div class="foot-brand">
+  <div class="wrap">
+    <div class="ft-top">
+      <div class="ft-brand">
         <img src="https://germancontrol.net/logo.png" alt="الشركة الألمانية لمكافحة الحشرات">
-        <div><b>الشركة الألمانية لمكافحة الحشرات</b><small>German Pest Control | Premium pest management</small></div>
+        <b>الشركة الألمانية لمكافحة الحشرات</b>
+        <small>German Pest Control — Premium pest management<br>مرخصة وموثقة من وزارة الصحة المصرية</small>
       </div>
-      <ul class="foot-links">
-        <li><a href="#home">الرئيسية</a></li>
-        <li><a href="#services">خدماتنا</a></li>
-        <li><a href="#about">من نحن</a></li>
-        <li><a href="#works">سابقة الأعمال</a></li>
-        <li><a href="#contact">تواصل معنا</a></li>
-      </ul>
-      <div class="socials">
-        <a href="https://www.instagram.com/" title="Instagram" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a>
-        <a href="https://www.tiktok.com/@user4156545939671" title="TikTok" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 3c.4 2.1 1.8 3.7 4 4v3c-1.6 0-3-.5-4-1.3v6.6a6.2 6.2 0 1 1-6.2-6.2c.3 0 .7 0 1 .1v3.2a3 3 0 1 0 2.2 2.9V3h3z"/></svg></a>
-        <a href="https://wa.me/201015335554" title="WhatsApp" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5.2.6.8 2 .9 2.1.1.2.1.3 0 .5-.1.2-.2.4-.3.5l-.5.6c-.2.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.7-.2.3.1 1.8.9 2.1 1 .3.2.5.3.6.4.1.2.1.7-.2 1.1z"/></svg></a>
+      <div class="ft-col">
+        <h5>الموقع</h5>
+        <ul>
+          <li><a href="#services">خدماتنا</a></li>
+          <li><a href="#about">لماذا نحن</a></li>
+          <li><a href="#works">سابقة الأعمال</a></li>
+          <li><a href="#faq">الأسئلة الشائعة</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h5>تواصل</h5>
+        <ul>
+          <li><a href="tel:+201015335554" style="direction:ltr;display:inline-block">01015335554</a></li>
+          <li><a href="https://wa.me/201015335554">واتساب</a></li>
+          <li><a href="#contact">فروعنا</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h5>تابعنا</h5>
+        <div class="socs">
+          <a href="https://www.instagram.com/" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.tiktok.com/@user4156545939671" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 3c.4 2.1 1.8 3.7 4 4v3c-1.6 0-3-.5-4-1.3v6.6a6.2 6.2 0 1 1-6.2-6.2c.3 0 .7 0 1 .1v3.2a3 3 0 1 0 2.2 2.9V3h3z"/></svg></a>
+          <a href="https://wa.me/201015335554" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5.2.6.8 2 .9 2.1.1.2.1.3 0 .5-.1.2-.2.4-.3.5l-.5.6c-.2.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.7-.2.3.1 1.8.9 2.1 1 .3.2.5.3.6.4.1.2.1.7-.2 1.1z"/></svg></a>
+        </div>
       </div>
     </div>
-    <p class="copy">© 2026 الشركة الألمانية لمكافحة الحشرات. جميع الحقوق محفوظة.</p>
+    <div class="ft-word">GERMAN PEST CONTROL</div>
+    <div class="ft-bar">
+      <span>© 2026 الشركة الألمانية لمكافحة الحشرات — جميع الحقوق محفوظة</span>
+      <span>germancontrol.net</span>
+    </div>
   </div>
 </footer>
 
-<a class="fab-wa" href="https://wa.me/201015335554" aria-label="واتساب">
+<a id="fab" href="https://wa.me/201015335554" aria-label="تواصل عبر واتساب">
   <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5.2.6.8 2 .9 2.1.1.2.1.3 0 .5-.1.2-.2.4-.3.5l-.5.6c-.2.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.7-.2.3.1 1.8.9 2.1 1 .3.2.5.3.6.4.1.2.1.7-.2 1.1z"/></svg>
 </a>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script>
-// ===== Nav scroll state =====
-const nav = document.getElementById('nav');
-const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
-onScroll();
-window.addEventListener('scroll', onScroll, {passive:true});
+(function(){
+"use strict";
+var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var hasGsap = typeof gsap !== 'undefined';
+if (reduce || !hasGsap) document.documentElement.classList.add('no-motion');
+if (hasGsap && !reduce) gsap.registerPlugin(ScrollTrigger);
 
-// ===== Mobile menu =====
-const burger = document.getElementById('burger');
-const links = document.getElementById('navLinks');
-burger.addEventListener('click', () => {
-  burger.classList.toggle('open');
-  links.classList.toggle('open');
+/* ---------- Populate marquees ---------- */
+var trustItems = ['مرخصة من وزارة الصحة المصرية','ضمان مكتوب حتى 3 سنوات','+5,600 عميل يثق بنا','مواد ألمانية آمنة 100%','معاينة مجانية','خدمة 24/7','سرية واحترافية كاملة'];
+var star = '<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.6 2.3 7.2-6.3-4.5-6.3 4.5L8 13.8 2 9.2h7.6z"/></svg>';
+var tmHTML = trustItems.map(function(t){return '<span class="tm-i">'+star+t+'</span>';}).join('');
+document.getElementById('tmTrack').innerHTML = tmHTML + tmHTML;
+
+var areas = ['الشيخ زايد','التجمع الخامس','الرحاب','مدينتي','القاهرة الجديدة','الساحل الشمالي','مدينة نصر','المعادي','٦ أكتوبر','الإسكندرية','الشروق','العبور','الجيزة','هليوبوليس'];
+var pin = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>';
+document.querySelectorAll('.ar-in').forEach(function(row, i){
+  var list = i === 0 ? areas : areas.slice().reverse();
+  var html = list.map(function(a){return '<span class="ar-pill">'+pin+a+'</span>';}).join('');
+  row.innerHTML = html + html;
 });
-links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-  burger.classList.remove('open');
-  links.classList.remove('open');
-}));
 
-// ===== Scroll reveal =====
-const io = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+/* ---------- Preloader ---------- */
+var loader = document.getElementById('loader');
+var fill = document.getElementById('ldFill');
+var num = document.getElementById('ldNum');
+var prog = {v:0};
+function finishLoader(){
+  if (hasGsap && !reduce){
+    gsap.to(loader,{yPercent:-100,duration:.9,ease:'power4.inOut',onComplete:function(){loader.style.display='none';heroIntro();}});
+  } else {
+    loader.style.display='none';
+    heroIntro();
+  }
+}
+if (hasGsap && !reduce){
+  gsap.to(prog,{v:100,duration:1.4,ease:'power2.out',
+    onUpdate:function(){var p=Math.round(prog.v);fill.style.width=p+'%';num.textContent=p+'%';},
+    onComplete:finishLoader});
+} else {
+  fill.style.width='100%';num.textContent='100%';
+  window.addEventListener('load', finishLoader);
+  setTimeout(finishLoader, 1200);
+}
+
+/* ---------- Hero intro ---------- */
+var heroDone = false;
+function heroIntro(){
+  if (heroDone) return; heroDone = true;
+  if (!hasGsap || reduce){
+    document.querySelectorAll('#hero h1 .li,[data-hero]').forEach(function(el){el.style.transform='none';el.style.opacity='1';});
+    startCounters(document);
+    return;
+  }
+  var tl = gsap.timeline({defaults:{ease:'power4.out'}});
+  tl.to('#hero h1 .li',{y:0,duration:1.15,stagger:.14})
+    .from('[data-hero]',{y:34,opacity:0,duration:1,stagger:.12},'-=.75')
+    .add(function(){startCounters(document.getElementById('hero'));},'-=.4');
+}
+
+/* ---------- Counters ---------- */
+function animateCount(el){
+  if (el.dataset.done) return; el.dataset.done = '1';
+  var target = +el.dataset.target;
+  if (!hasGsap || reduce){ el.textContent = target.toLocaleString('en-US'); return; }
+  var o = {v:0};
+  gsap.to(o,{v:target,duration:1.8,ease:'power3.out',onUpdate:function(){el.textContent = Math.round(o.v).toLocaleString('en-US');}});
+}
+function startCounters(scope){ (scope||document).querySelectorAll('.count').forEach(animateCount); }
+
+/* ---------- Nav behavior ---------- */
+var nav = document.getElementById('nav');
+var lastY = 0;
+window.addEventListener('scroll', function(){
+  var y = window.scrollY;
+  nav.classList.toggle('solid', y > 60);
+  nav.classList.toggle('hide', y > 500 && y > lastY);
+  lastY = y;
+},{passive:true});
+
+var burger = document.getElementById('burger');
+var navL = document.getElementById('navL');
+burger.addEventListener('click', function(){
+  burger.classList.toggle('open');
+  navL.classList.toggle('open');
+});
+navL.querySelectorAll('a').forEach(function(a){
+  a.addEventListener('click', function(){
+    burger.classList.remove('open');
+    navL.classList.remove('open');
   });
-}, {threshold: .12});
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+});
 
-// ===== Animated counters =====
-const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const fmt = n => n.toLocaleString('en-US');
-const counterIO = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (!e.isIntersecting) return;
-    const el = e.target, target = +el.dataset.target;
-    counterIO.unobserve(el);
-    if (reduceMotion) { el.textContent = fmt(target); return; }
-    const dur = 1600, start = performance.now();
-    const tick = now => {
-      const p = Math.min((now - start) / dur, 1);
-      const eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = fmt(Math.round(target * eased));
-      if (p < 1) requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
+/* ---------- GSAP scroll effects ---------- */
+if (hasGsap && !reduce){
+
+  // Hero parallax + slow zoom
+  gsap.to('#heroImg',{scale:1.0,yPercent:8,ease:'none',
+    scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:true}});
+
+  // Generic reveals
+  ScrollTrigger.batch('[data-reveal]',{
+    start:'top 88%',
+    onEnter:function(batch){
+      gsap.to(batch,{opacity:1,y:0,duration:1.1,ease:'power4.out',stagger:.09,overwrite:true});
+      batch.forEach(function(el){startCounters(el);});
+    },
+    once:true
   });
-}, {threshold: .6});
-document.querySelectorAll('.count').forEach(el => counterIO.observe(el));
 
-// ===== Areas marquee =====
-const areas = ['الشيخ زايد','التجمع','الرحاب','مدينتي','الساحل الشمالي','مدينة نصر','الإسكندرية','القاهرة','الجيزة','الشروق','العبور'];
-const pin = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>';
-const marquee = document.getElementById('marquee');
-const pills = areas.map(a => `<span class="area-pill">${pin}${a}</span>`).join('');
-marquee.innerHTML = pills + pills; // duplicate for seamless loop
+  // About images inner parallax
+  document.querySelectorAll('[data-plx]').forEach(function(img){
+    gsap.to(img,{yPercent:+img.dataset.plx,ease:'none',
+      scrollTrigger:{trigger:img.closest('.ab-media'),start:'top bottom',end:'bottom top',scrub:true}});
+  });
+
+  // Process line fill + dots
+  var prs = gsap.utils.toArray('.pr');
+  gsap.to('#prFill',{width:'100%',ease:'none',
+    scrollTrigger:{trigger:'.pr-grid',start:'top 75%',end:'bottom 55%',scrub:true,
+      onUpdate:function(self){
+        var lit = Math.floor(self.progress * prs.length + 0.35);
+        prs.forEach(function(p,i){p.classList.toggle('lit', i < lit || self.progress > .96);});
+      }}});
+
+  // Horizontal works gallery (desktop only)
+  ScrollTrigger.matchMedia({
+    '(min-width:1025px)': function(){
+      var track = document.getElementById('wkTrack');
+      var getX = function(){ return -(track.scrollWidth - window.innerWidth); };
+      gsap.to(track,{x:getX,ease:'none',
+        scrollTrigger:{trigger:'#wkPin',start:'top top',end:function(){return '+=' + (track.scrollWidth - window.innerWidth);},
+          scrub:1,pin:true,anticipatePin:1,invalidateOnRefresh:true}});
+    }
+  });
+
+  // Footer wordmark drift
+  gsap.from('.ft-word',{yPercent:60,opacity:0,ease:'power3.out',duration:1.4,
+    scrollTrigger:{trigger:'footer',start:'top 85%'}});
+
+} else {
+  // No-motion fallback: show everything, run counters instantly
+  document.querySelectorAll('[data-reveal]').forEach(function(el){el.style.opacity='1';el.style.transform='none';});
+  startCounters(document);
+}
+
+/* ---------- Custom cursor + magnetic ---------- */
+var fine = window.matchMedia('(pointer:fine)').matches;
+if (fine && !reduce){
+  var cur = document.getElementById('cursor');
+  var ring = document.getElementById('cursorRing');
+  var mx=0,my=0,rx=0,ry=0;
+  window.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;
+    cur.style.left=mx+'px';cur.style.top=my+'px';});
+  (function loop(){
+    rx += (mx-rx)*.14; ry += (my-ry)*.14;
+    ring.style.left=rx+'px'; ring.style.top=ry+'px';
+    requestAnimationFrame(loop);
+  })();
+  document.querySelectorAll('a,button,.svc,.wk').forEach(function(el){
+    el.addEventListener('mouseenter',function(){ring.classList.add('grow');});
+    el.addEventListener('mouseleave',function(){ring.classList.remove('grow');});
+  });
+  // Magnetic buttons
+  document.querySelectorAll('[data-mag]').forEach(function(btn){
+    btn.addEventListener('mousemove',function(e){
+      var r = btn.getBoundingClientRect();
+      var x = e.clientX - r.left - r.width/2;
+      var y = e.clientY - r.top - r.height/2;
+      btn.style.transform = 'translate(' + x*.18 + 'px,' + y*.22 + 'px)';
+    });
+    btn.addEventListener('mouseleave',function(){btn.style.transform='';});
+  });
+}
+
+/* ---------- Testimonials slider ---------- */
+var vcs = document.querySelectorAll('.vc');
+var dotsBox = document.getElementById('vcDots');
+var vcIdx = 0, vcTimer;
+vcs.forEach(function(_,i){
+  var b = document.createElement('button');
+  if (i===0) b.classList.add('on');
+  b.setAttribute('aria-label','رأي '+(i+1));
+  b.addEventListener('click',function(){goVc(i);resetVc();});
+  dotsBox.appendChild(b);
+});
+var dots = dotsBox.querySelectorAll('button');
+function goVc(i){
+  vcs[vcIdx].classList.remove('on'); dots[vcIdx].classList.remove('on');
+  vcIdx = i;
+  vcs[vcIdx].classList.add('on'); dots[vcIdx].classList.add('on');
+}
+function resetVc(){ clearInterval(vcTimer); vcTimer = setInterval(function(){goVc((vcIdx+1)%vcs.length);}, 6000); }
+resetVc();
+
+/* ---------- FAQ accordion ---------- */
+document.querySelectorAll('.fq').forEach(function(fq){
+  var btn = fq.querySelector('button');
+  var ans = fq.querySelector('.ans');
+  btn.addEventListener('click',function(){
+    var open = fq.classList.contains('open');
+    document.querySelectorAll('.fq.open').forEach(function(o){
+      o.classList.remove('open'); o.querySelector('.ans').style.maxHeight = '0';
+    });
+    if (!open){
+      fq.classList.add('open');
+      ans.style.maxHeight = ans.scrollHeight + 'px';
+    }
+  });
+});
+
+/* ---------- Fallback if GSAP failed & hero never ran ---------- */
+setTimeout(function(){ if(!heroDone) heroIntro(); }, 3500);
+})();
 </script>
 </body>
 </html>
